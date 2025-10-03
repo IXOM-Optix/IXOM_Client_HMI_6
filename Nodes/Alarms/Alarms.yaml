@@ -1,0 +1,117 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm2
+  Id: g=35183db488a44346b6c31bc8c493ca29
+  Type: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=a21a5af33060b1c6dcc09990415f86fd
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5a3438af75b8252954704c2772173c0f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=838fdab92ff137c479fc237ef349094d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=a3a37c25208764b1efa7e1527d847e0c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Message of Alarm2"}
+- Name: DigitalAlarm3
+  Id: g=a6e36df48e482e3ba86ef7c6f939c78d
+  Type: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=c4de689b1b9cd379dbf383c1eb913de0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=7c614b206924304b5402a726160125e5
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=e65d6af20717b0ab42dc8f9e4ca46b4a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=297bf3333b0874cfb0b7784b20709a8c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Message of Alarm3"}
+- File: Templates/Templates.yaml

@@ -1,0 +1,4455 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: 'CHANNEL_AI_DIAG:I:02'
+  Id: g=aa3d6767e4b0380a9f70a802d83e35d7
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_AI_DIAG:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Fault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Uncertain",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OpenWire",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OverTemperature",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FieldPowerOff",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NotANumber",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Underrange",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Overrange",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RateAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "CalFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Calibrating",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Data",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RollingTimestamp",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_AI_DIAG:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: PLC_Data_Type1
+  Id: g=f00b618fdead564726c2549fd308674e
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "PLC_Data_Type",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f00b618fdead564726c2549fd308674e",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "ProductRev",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ProductCode",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "SerialNumber",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DateTime",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [8]
+     },{
+      "Name": "DateTime_Set",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [8]
+     },{
+      "Name": "DateTime_Sync",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Status_RUN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Status_REM",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Status_PROG",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"PLC_Data_Type"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_AI:O:02'
+  Id: g=ae4f51a7d6c0848c9d6e78404105e16a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_AI:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "LLAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RateAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RateAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SensorOffset",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_AI:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_Pause_Reason1
+  Id: g=8324af3a859cb25d134e834b4a3893e3
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_Pause_Reason",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8324af3a859cb25d134e834b4a3893e3",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Pause_Reason",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Pause_Duration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Pause_Time",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Step_Before_Pause",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_Pause_Reason"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: LVL_AOI2
+  Id: g=5e05e7e1b9d680ede0756a2698aa5506
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "LVL_AOI",
+    "DataType": {
+     "IdType": 2,
+     "Id": "5e05e7e1b9d680ede0756a2698aa5506",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RAW_INPUT",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"LVL_AOI"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: PID_Status2
+  Id: g=98cdd2ad52165404d33a2c8c0cdf8186
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "PID_Status",
+    "DataType": {
+     "IdType": 2,
+     "Id": "98cdd2ad52165404d33a2c8c0cdf8186",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Setpoint",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"PID_Status"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_Pause1
+  Id: g=ab12d74d59046742660487eac94bfc44
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_Pause",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ab12d74d59046742660487eac94bfc44",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "History",
+      "DataType": {
+       "IdType": 2,
+       "Id": "8324af3a859cb25d134e834b4a3893e3",
+       "Namespace": 40
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [100]
+     },{
+      "Name": "Number",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_Pause"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: MgP_Config1
+  Id: g=81e748d255a7b0f8f35cdb3d433a969a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "MgP_Config",
+    "DataType": {
+     "IdType": 2,
+     "Id": "81e748d255a7b0f8f35cdb3d433a969a",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Setup",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Has_Limit_Switches",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Interlock_System_Request",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Interlock_Raw_Water_Feed",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Interlock_Regen_Permit",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Regen_Tank_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Contactor_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "LR_Tank_Complete_Transfer",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Regen_Inlet_Flow_Meter",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Reuse_Brine_Tank_Iso",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Fresh_Brine_Tank_Iso",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Shared_Brine_Pump",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Return_Brine_On_Bed_Volume",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Air_Lift_Pumps",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FR_Disc_Flow_Pump",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FR_Eductor_Pump",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FR_AOP_Tank",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FR_Dosing_from_Regen",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"MgP_Config"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_Time1
+  Id: g=6ed52fac0a3cdbf0ebf193ebbd0ef16a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_Time",
+    "DataType": {
+     "IdType": 2,
+     "Id": "6ed52fac0a3cdbf0ebf193ebbd0ef16a",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Setpoint",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Elapsed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Elapsed_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Remaining",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Remaining_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Elapsed_Seconds",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_Time"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: PID_UDT2
+  Id: g=db599b43e321c776d6e88fdcbab7bdb6
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "PID_UDT",
+    "DataType": {
+     "IdType": 2,
+     "Id": "db599b43e321c776d6e88fdcbab7bdb6",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Control",
+      "DataType": {
+       "IdType": 2,
+       "Id": "98cdd2ad52165404d33a2c8c0cdf8186",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Input_Min",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Input_Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Input_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Output_Min",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Output_Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Output_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Output_Start",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Output_Start_Delay",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "P",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "I",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "D",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Update_Rate",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Deadband",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"PID_UDT"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: POUs2
+  Id: g=7eb471a49474e46251168ea3758e3bf9
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "POUs",
+    "DataType": {
+     "IdType": 2,
+     "Id": "7eb471a49474e46251168ea3758e3bf9",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Loaded_Resin",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Service_Water",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "LR_Line_Flush",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Reuse_Brine",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Fresh_Brine",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "FR_Tank_Flush",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Fresh_Resin",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Brine_Top_Up",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Virgin_Resin",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     },{
+      "Name": "FR_Line_Flush",
+      "DataType": {
+       "IdType": 2,
+       "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"POUs"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AO4:C:0'
+  Id: g=da5286d8b9f9a405b2b9852a61ddd03c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AO4:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "da5286d8b9f9a405b2b9852a61ddd03c",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Ch00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "fd3c5722ee9b4e2af956f037ba1fa67c",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "fd3c5722ee9b4e2af956f037ba1fa67c",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "fd3c5722ee9b4e2af956f037ba1fa67c",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "fd3c5722ee9b4e2af956f037ba1fa67c",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AO4:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AO4:I:0'
+  Id: g=02d83653169690afb4b937341c25f9d1
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AO4:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "02d83653169690afb4b937341c25f9d1",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "RunMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ConnectionFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticActive",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticSequenceCount",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Ch00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "7f79c59d75a3177c546c39aa3af8bf6f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "7f79c59d75a3177c546c39aa3af8bf6f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "7f79c59d75a3177c546c39aa3af8bf6f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "7f79c59d75a3177c546c39aa3af8bf6f",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AO4:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Monthly_Report2
+  Id: g=49bae13817e115bb902c6f7567ac8911
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Monthly_Report",
+    "DataType": {
+     "IdType": 2,
+     "Id": "49bae13817e115bb902c6f7567ac8911",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Time_Stamp",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Water_Treated",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Resin_Regenerated",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Treatment_Rate",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Contactor_Flow_Rate_Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Contactor_Flow_Rate_Avg",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Time_Above_90_Pct_Cap",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Time_Above_Capacity",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Resin_Bed_Smallest",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Resin_Bed_Largest",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Resin_Bed_Average",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Resin_Added",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Salt_Added",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Salt_Consumed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Waste_Produced",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Service_Water_Consumed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Power_Consumed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Paused_Time",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Log_Status",
+      "DataType": {
+       "Id": 2
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Monthly_Report"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: System1
+  Id: g=9665a744fbc8eab5d695feff2a4b3f6d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "System",
+    "DataType": {
+     "IdType": 2,
+     "Id": "9665a744fbc8eab5d695feff2a4b3f6d",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Request",
+      "DataType": {
+       "Id": 1
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [64]
+     },{
+      "Name": "Acquired",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Failed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Description",
+      "DataType": {
+       "Id": 12
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [16]
+     },{
+      "Name": "Inhibit_Selection",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"System"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_DO:O:02'
+  Id: g=6e46a483b879df199fe08e213320b388
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_DO:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "6e46a483b879df199fe08e213320b388",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Data",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_DO:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_DI:I:02'
+  Id: g=ca7b1c3fe5065105245f07353abfe34f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_DI:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ca7b1c3fe5065105245f07353abfe34f",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Data",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Fault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Uncertain",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_DI:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: VFD_PF_5251
+  Id: g=a35b7e5e2572c5b80b780743481ef8ea
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "VFD_PF_525",
+    "DataType": {
+     "IdType": 2,
+     "Id": "a35b7e5e2572c5b80b780743481ef8ea",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ALM",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Pre_Fail_Start",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Pre_Fail_Stop",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RUNNING",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FAULT",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_RUN_CMD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_ENABLE",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Speed_Manual",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Speed_Actual",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Runtime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Speed_Auto",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Pre_Accel",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Pre_Decel",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Fault_Code",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Current",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Module_Fault_Code",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Current_Delay",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Current_High_SP",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Current_Low_SP",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CMD_Speed",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "IO_MTR_EQUIP_FAIL",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"VFD_PF_525"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AI8:C:0'
+  Id: g=152aa258399fb32bf3a6cb5de8f88c6f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AI8:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "152aa258399fb32bf3a6cb5de8f88c6f",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Ch00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "62845a23413ac59d7dd6fedd9ad72392",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AI8:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_DO16_Diag:I:02'
+  Id: g=528fda9a7f90829dd7d9a377752f04ec
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_DO16_Diag:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "528fda9a7f90829dd7d9a377752f04ec",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "RunMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ConnectionFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticActive",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticSequenceCount",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Pt00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt08",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt09",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt10",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt11",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt12",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt13",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt14",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt15",
+      "DataType": {
+       "IdType": 2,
+       "Id": "54d17e0f571229159d1fdf2d2c868e81",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_DO16_Diag:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_DO16:O:02'
+  Id: g=c8da247f5db62acac9b0ecb91773ecf7
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_DO16:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c8da247f5db62acac9b0ecb91773ecf7",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Pt00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt08",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt09",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt10",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt11",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt12",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt13",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt14",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt15",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6e46a483b879df199fe08e213320b388",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_DO16:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AI_Channel:C:02'
+  Id: g=62845a23413ac59d7dd6fedd9ad72392
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AI_Channel:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "62845a23413ac59d7dd6fedd9ad72392",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Range",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "SensorType",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "NotchFilter",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "AlarmDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProcessAlarmLatchEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RateAlarmLatchEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OpenWireEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Disable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TenOhmOffset",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DigitalFilter",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "LowSignal",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HighSignal",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LowEngineering",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HighEngineering",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LLAlarmLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LAlarmLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HAlarmLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HHAlarmLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RateAlarmLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "AlarmDeadband",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AI_Channel:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer1
+  Id: g=6c2528ac839b5d14f9891ac7b868441d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer",
+    "DataType": {
+     "IdType": 2,
+     "Id": "6c2528ac839b5d14f9891ac7b868441d",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Step",
+      "DataType": {
+       "IdType": 2,
+       "Id": "e60e7320d36c2e6822b4f731104d5bb6",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Time",
+      "DataType": {
+       "IdType": 2,
+       "Id": "6ed52fac0a3cdbf0ebf193ebbd0ef16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Test",
+      "DataType": {
+       "IdType": 2,
+       "Id": "e301d9cfbccd25be0d03048b036b05a0",
+       "Namespace": 40
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [3]
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "IdType": 2,
+       "Id": "3cba779231ced3ee0a76fb5424329054",
+       "Namespace": 40
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "IdType": 2,
+       "Id": "0df4e5c884084813da83b9784579214c",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pause",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ab12d74d59046742660487eac94bfc44",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Last_Pause_Reason",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Recovery_Attempts",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Alarm_Word",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_CMD1
+  Id: g=3cba779231ced3ee0a76fb5424329054
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_CMD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3cba779231ced3ee0a76fb5424329054",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Auto_Start",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Auto_Advance",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Pause",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Resume",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Recover",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Jog_Back",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Jog_Forward",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Auto_Resume",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Abort",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_CMD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_Step_History1
+  Id: g=dea03e4c1b55c404091a56dc748a4b7f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_Step_History",
+    "DataType": {
+     "IdType": 2,
+     "Id": "dea03e4c1b55c404091a56dc748a4b7f",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Number",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Duration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "TimeStart",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Duration_Units",
+      "DataType": {
+       "Id": 12
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_Step_History"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: LVL1
+  Id: g=72ce3b95eea0cfdfafae9f5b055e58ed
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "LVL",
+    "DataType": {
+     "IdType": 2,
+     "Id": "72ce3b95eea0cfdfafae9f5b055e58ed",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DELAY_H",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_HH",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_L",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_LL",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Distance",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Distance_at_100",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Drain_Rate",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Fill_Rate",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Input_Filter_Rate",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Percent",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Rate_of_Change",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROC_Sample_Interval",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "SP_H",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_HH",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_L",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_LL",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Volume",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Volume_at_100",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Distance_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Volume_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Percent_of_Range_at_100",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ALM",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"LVL"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_DI_Channel:C:02'
+  Id: g=c76bf969eaf77f60f090fff99950fc76
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_DI_Channel:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c76bf969eaf77f60f090fff99950fc76",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "InputOffOnFilter",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "InputOnOffFilter",
+      "DataType": {
+       "Id": 2
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_DI_Channel:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_DI16:I:02'
+  Id: g=382302980e307468eaeebe49a6fefe0c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_DI16:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "382302980e307468eaeebe49a6fefe0c",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "RunMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ConnectionFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticActive",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticSequenceCount",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Pt00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt08",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt09",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt10",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt11",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt12",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt13",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt14",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt15",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ca7b1c3fe5065105245f07353abfe34f",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_DI16:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Totalization_1_Seconds2
+  Id: g=c54d36b94aac0b35ed76ce7e07af6633
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Totalization_1_Seconds",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c54d36b94aac0b35ed76ce7e07af6633",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Flow",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Deadband",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Total",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Enable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Last_Total",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Large_Values",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Totalization_1_Seconds"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AO4:O:0'
+  Id: g=cd30dfef9828a72594c5ab2443be54fc
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AO4:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "cd30dfef9828a72594c5ab2443be54fc",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Ch00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4b9b3277926f64480ebf902effddc187",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4b9b3277926f64480ebf902effddc187",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4b9b3277926f64480ebf902effddc187",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4b9b3277926f64480ebf902effddc187",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AO4:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_DO_Diag_Channel:C:02'
+  Id: g=114f626955865405bf5476d0525dff5a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_DO_Diag_Channel:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "114f626955865405bf5476d0525dff5a",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "FaultMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FaultValue",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgValue",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FaultFinalState",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgramToFaultEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NoLoadEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FaultValueStateDuration",
+      "DataType": {
+       "Id": 2
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_DO_Diag_Channel:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Setpoints1
+  Id: g=5fe2ad0bb2e791216c5887c62e9b3a95
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Setpoints",
+    "DataType": {
+     "IdType": 2,
+     "Id": "5fe2ad0bb2e791216c5887c62e9b3a95",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Value",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SavedValue",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Min",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Time",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Setpoints"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: DIG1
+  Id: g=72e2cdd6f566aa440eca8da48dda476e
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DIG",
+    "DataType": {
+     "IdType": 2,
+     "Id": "72e2cdd6f566aa440eca8da48dda476e",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ALM",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Input_Delay",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "IO_INPUT",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Input_Hold_Delay",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DIG"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AI8:I:0'
+  Id: g=1d8afa80a84ec342c0b330e8e414e348
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AI8:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "1d8afa80a84ec342c0b330e8e414e348",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "RunMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ConnectionFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticActive",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DiagnosticSequenceCount",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Ch00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "aa3d6767e4b0380a9f70a802d83e35d7",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AI8:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Regen_Data2
+  Id: g=0462782a979346a3e229a35fba76a830
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Regen_Data",
+    "DataType": {
+     "IdType": 2,
+     "Id": "0462782a979346a3e229a35fba76a830",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Regen_Number",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Regen_Start_Time",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Regen_Complete_Time",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Regen_Runtime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Regen_Pause_Time",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Percentage",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LR_Concentration",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Reuse_Brine_Cond",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Fresh_Brine_Cond",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Op_Level_Cond",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Resin_Bed",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Rewet",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Reuse_Brine",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Reuse_Breakthru",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Reuse_to_Waste",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Fresh_Brine",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Brine_Returned",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Rinse_Addition",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Rinse_Breakthru",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Brine_to_Waste",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Rinse_to_Waste",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "BV_Resuspend",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Totals_Water_to_Waste",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Totals_Water_to_Contactor",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Totals_Brine_to_Waste",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Totals_Fresh_Brine_Added",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Totals_Service_Water_Used",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Totals_Resin_Regenerated",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Drain_Rate_Decant",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Drain_Rate_Resin_Bed_Detect",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Drain_Rate_Brine_to_Waste",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Drain_Rate_Brine_Return",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Drain_Rate_FR_Transfer",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Regen_Data"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: IIOT_DATA2
+  Id: g=dfc47c970d250e6cf13182806ba78736
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "IIOT_DATA",
+    "DataType": {
+     "IdType": 2,
+     "Id": "dfc47c970d250e6cf13182806ba78736",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Site_Name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Water_Treatment_Step_Num",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Regen_1_Step_Num",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Regen_2_Step_Num",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Water_Treated_Today",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Water_Treated_Yesterday",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"IIOT_DATA"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_AO_DIAG:I:0'
+  Id: g=7f79c59d75a3177c546c39aa3af8bf6f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_AO_DIAG:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "7f79c59d75a3177c546c39aa3af8bf6f",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Fault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Uncertain",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NoLoad",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ShortCircuit",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OverTemperature",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FieldPowerOff",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InHold",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NotANumber",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Underrange",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Overrange",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLimitAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HLimitAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RampAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "CalFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Calibrating",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Data",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RollingTimestamp",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_AO_DIAG:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_Step1
+  Id: g=e60e7320d36c2e6822b4f731104d5bb6
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_Step",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e60e7320d36c2e6822b4f731104d5bb6",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Number",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Back",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Next",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Resume",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Recover",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "CTP",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Triggering_Recovery",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [10]
+     },{
+      "Name": "History",
+      "DataType": {
+       "IdType": 2,
+       "Id": "dea03e4c1b55c404091a56dc748a4b7f",
+       "Namespace": 40
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [100]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_Step"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_STS1
+  Id: g=0df4e5c884084813da83b9784579214c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_STS",
+    "DataType": {
+     "IdType": 2,
+     "Id": "0df4e5c884084813da83b9784579214c",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Paused_Not_Via_Operator",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Recovery_Active",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_STS"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: ALZ_AOI2
+  Id: g=1787d1c56f8ab3215c0f9b66c7d6d51f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "ALZ_AOI",
+    "DataType": {
+     "IdType": 2,
+     "Id": "1787d1c56f8ab3215c0f9b66c7d6d51f",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"ALZ_AOI"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_DO_DIAG:I:02'
+  Id: g=54d17e0f571229159d1fdf2d2c868e81
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_DO_DIAG:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "54d17e0f571229159d1fdf2d2c868e81",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Data",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Fault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Uncertain",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NoLoad",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ShortCircuit",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_DO_DIAG:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_DO16_Diag:C:02'
+  Id: g=7782bcce0a51df80f43ab548496a151e
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_DO16_Diag:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "7782bcce0a51df80f43ab548496a151e",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Pt00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt08",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt09",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt10",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt11",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt12",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt13",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt14",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt15",
+      "DataType": {
+       "IdType": 2,
+       "Id": "114f626955865405bf5476d0525dff5a",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_DO16_Diag:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_Test1
+  Id: g=e301d9cfbccd25be0d03048b036b05a0
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_Test",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e301d9cfbccd25be0d03048b036b05a0",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Enable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Pre_Delay",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Compare",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Setpoint",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Post_Delay",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Next_Step",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Done",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_Test"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Accum2
+  Id: g=ed1a11f59c6d62be6b1d8d8ba6932581
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Accum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ed1a11f59c6d62be6b1d8d8ba6932581",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "This_Day",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Week",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Month",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Year",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Lifetime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Day",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Week",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Month",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Year",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Average_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Average_Value",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Accum"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: VLV1
+  Id: g=10ca2d5fc7c91f9ea3ba8d9df1600a72
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "VLV",
+    "DataType": {
+     "IdType": 2,
+     "Id": "10ca2d5fc7c91f9ea3ba8d9df1600a72",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ALM",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Pre_Fail_Open",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Pre_Fail_Close",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "IO_LSO",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_LSC",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_OPEN_OUT",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_CLOSE_OUT",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Position_Manual",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Position_Actual",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Position_Reference",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Position_Auto",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"VLV"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_DI16:C:02'
+  Id: g=d61bef53bc3403eddf87770d3d5e9dd4
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_DI16:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "d61bef53bc3403eddf87770d3d5e9dd4",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Pt00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt08",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt09",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt10",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt11",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt12",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt13",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt14",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Pt15",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c76bf969eaf77f60f090fff99950fc76",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_DI16:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: MTR2
+  Id: g=54afcf42e732e5e608b7c9eb5087f1e5
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "MTR",
+    "DataType": {
+     "IdType": 2,
+     "Id": "54afcf42e732e5e608b7c9eb5087f1e5",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ALM",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Pre_Fail_Start",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Pre_Fail_Stop",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "IO_RUNNING",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_FAULT",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_RUN_CMD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "IO_ENABLE",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Speed_Manual",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Speed_Actual",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Runtime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Speed_Auto",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "IO_Speed_Reference",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"MTR"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AI8:O:0'
+  Id: g=983ce97771e2b091ca124482fffa7b74
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AI8:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "983ce97771e2b091ca124482fffa7b74",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Ch00",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch01",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch02",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch03",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch04",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch05",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch06",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     },{
+      "Name": "Ch07",
+      "DataType": {
+       "IdType": 2,
+       "Id": "ae4f51a7d6c0848c9d6e78404105e16a",
+       "Namespace": 40
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AI8:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Strings1
+  Id: g=09bc11d48b024f88e5bcd926ac10d5ff
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Strings",
+    "DataType": {
+     "IdType": 2,
+     "Id": "09bc11d48b024f88e5bcd926ac10d5ff",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Empty",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "ms",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "sec",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "min",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "hr",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "days",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "LES",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "LEQ",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "EQU",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "GEQ",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "GRT",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "mScm",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "distance",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "drain_rate",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "flow_rate",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "volume",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "M_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "K_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "number",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "BV",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "percent",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Per_Million",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "M_Volume",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "unit_name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "of",
+      "DataType": {
+       "Id": 12
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Strings"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: ALZ2
+  Id: g=389c88e0af10a87249d4375f9e22c6f1
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "ALZ",
+    "DataType": {
+     "IdType": 2,
+     "Id": "389c88e0af10a87249d4375f9e22c6f1",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "ALM",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DELAY_H",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_HH",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_L",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_LL",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "EU_Min",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "EU_Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Input_Filter_Rate",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "SP_H",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_HH",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_L",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_LL",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Units",
+      "DataType": {
+       "Id": 12
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"ALZ"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_AO:O:0'
+  Id: g=4b9b3277926f64480ebf902effddc187
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_AO:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4b9b3277926f64480ebf902effddc187",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "LLimitAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HLimitAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RampAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Data",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_AO:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'AB:5000_AO_Channel:C:0'
+  Id: g=fd3c5722ee9b4e2af956f037ba1fa67c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:5000_AO_Channel:C:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "fd3c5722ee9b4e2af956f037ba1fa67c",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Range",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "AlarmDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LimitAlarmLatchEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RampAlarmLatchEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NoLoadEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Disable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FaultMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgramToFaultEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RampInRun",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RampToProg",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RampToFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HoldForInit",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "FaultValueStateDuration",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "MaxRampRate",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LowSignal",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HighSignal",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LowEngineering",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HighEngineering",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LowLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HighLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Offset",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "FaultValue",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ProgValue",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "FaultFinalState",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:5000_AO_Channel:C:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: MESSAGE2
+  Id: g=bbef2d052f5b681db0eddb5ec08e77f3
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "MESSAGE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bbef2d052f5b681db0eddb5ec08e77f3",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Flags",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "EW",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ER",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ST",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TO",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EN_CC",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ERR",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "EXERR",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ERR_SRC",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "DN_LEN",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "REQ_LEN",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DestinationLink",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DestinationNode",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "SourceLink",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Class",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Attribute",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Instance",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LocalIndex",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Channel",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Rack",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Group",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Slot",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Path",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "RemoteIndex",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "RemoteElement",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "UnconnectedTimeout",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ConnectionRate",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "TimeoutMultiplier",
+      "DataType": {
+       "Id": 2
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"MESSAGE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

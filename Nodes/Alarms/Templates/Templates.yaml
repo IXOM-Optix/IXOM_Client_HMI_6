@@ -1,0 +1,256 @@
+Name: Templates
+Id: g=7f22d16dd42e658ceb7608ac98a67b8e
+Type: FolderType
+Children:
+- Name: DigitalAlarm_IXOM
+  Id: g=750875c7f31c460015320ce648a9da6a
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=c29212055365ae7787001745eda7e909
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ff49250136de296e4cb2e61edee7ddd1
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=21098a0f6eda300ad5af15b2a52ab00d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: AutoAcknowledge
+    Id: g=a2ca5b082bdf608761eedc7f1bda33d2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+  - Name: AutoConfirm
+    Id: g=7adee840318a45585c3b65934adba760
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: PLC
+    Id: g=21ccdea287a04de545e04dde6afd4961
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Message
+    Id: g=88c8c3de47630ed13741ae82138489e4
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    ModellingRule: Optional
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=1cf6a82bacf3aa682fa91acbbd0d53bd
+  - Name: Area
+    Id: g=86be884952205559e4253287280a8eba
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Operator
+    Id: g=cff8f03e3039a78be1963fea26dff4a3
+    Type: BaseDataVariableType
+    DataType: String
+- Name: DigitalAlarm_Event_IXOM
+  Id: g=a46c525dca9d6bd6bc8a626132174c8f
+  Supertype: OffNormalAlarmType
+  Children:
+  - Class: Reference
+    Target: ns=0;i=9111
+  - Class: Reference
+    Target: ns=0;i=9028
+  - Class: Reference
+    Target: ns=0;i=9027
+  - Class: Reference
+    Target: ns=0;i=9029
+  - Name: NormalState
+    Id: g=bc3a85b271679c18d90d6ae546c13744
+    Type: PropertyType
+    DataType: NodeId
+  - Name: ActiveState
+    Id: g=bd311115cceb6f09186e4626a03e0e4f
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: Id
+      Id: g=86e6e9d571bb372aeb763f18a2b2f246
+      Type: PropertyType
+      DataType: Boolean
+  - Name: InputNode
+    Id: g=a76385fb9acdc37744d7ed498385aac0
+    Type: PropertyType
+    DataType: NodeId
+  - Name: SuppressedOrShelved
+    Id: g=dd92c0a527ae46eeacda19a69d084b04
+    Type: PropertyType
+    DataType: Boolean
+  - Name: AckedState
+    Id: g=34f58a1899cf918541487ca7c04ea618
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: Id
+      Id: g=6c395e1142f0dcc5f012738bd1ad9685
+      Type: PropertyType
+      DataType: Boolean
+  - Class: Reference
+    Target: ns=0;i=9111
+  - Name: ConditionClassId
+    Id: g=9c171f265c71b3beab4feb721be6385d
+    Type: PropertyType
+    DataType: NodeId
+  - Name: ConditionClassName
+    Id: g=43341b032cf2f7efaf2ba1bd4028e7ac
+    Type: PropertyType
+    DataType: LocalizedText
+  - Name: ConditionName
+    Id: g=716f0a4d7402e8cc9703751059d4672f
+    Type: PropertyType
+    DataType: String
+  - Name: BranchId
+    Id: g=bb8e4126e6f28cd0c57eeed033dcb7e2
+    Type: PropertyType
+    DataType: NodeId
+  - Class: Reference
+    Target: ns=0;i=9111
+  - Name: Retain
+    Id: g=ffa5f3162d0164fe192d2cd0977f7920
+    Type: PropertyType
+    DataType: Boolean
+  - Name: EnabledState
+    Id: g=8cfc46a0c661ed1ef64336881082a1d6
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: Id
+      Id: g=19c696e51cba6757a07518299fc1bf78
+      Type: PropertyType
+      DataType: Boolean
+  - Name: Quality
+    Id: g=a4c52095838d243e7be9798296e3b69c
+    Type: ConditionVariableType
+    DataType: StatusCode
+    Children:
+    - Name: SourceTimestamp
+      Id: g=a78edd1eea73acca0f17d9f8bac4c3a8
+      Type: PropertyType
+      DataType: UtcTime
+  - Name: LastSeverity
+    Id: g=5ffd31d610bf0529c78310da7be8189c
+    Type: ConditionVariableType
+    DataType: UInt16
+    Children:
+    - Name: SourceTimestamp
+      Id: g=6fd2f52507d2f8fca29920efb9421526
+      Type: PropertyType
+      DataType: UtcTime
+  - Name: Comment
+    Id: g=4f5994970e44f1bda47028b8a454794e
+    Type: ConditionVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: SourceTimestamp
+      Id: g=4990d261c8ce7bc8c2679c01d0939b01
+      Type: PropertyType
+      DataType: UtcTime
+  - Name: ClientUserId
+    Id: g=6cf7b53e2e49ff011664304da6abbb85
+    Type: PropertyType
+    DataType: String
+    ReferenceType: HasComponent
+  - Class: Reference
+    Target: ns=0;i=9027
+  - Class: Reference
+    Target: ns=0;i=9028
+  - Class: Reference
+    Target: ns=0;i=9029
+  - Name: EventId
+    Id: g=1479f971a5bcea998db543d259768bfb
+    Type: PropertyType
+    DataType: ByteString
+  - Name: EventType
+    Id: g=7184af03bb053ced44b65c9871eb4cd2
+    Type: PropertyType
+    DataType: NodeId
+  - Name: SourceNode
+    Id: g=8ea91c55f1834e40ebd92746c38d203b
+    Type: PropertyType
+    DataType: NodeId
+  - Name: SourceName
+    Id: g=d065485a0b339d85d5e8cecbaf066d9f
+    Type: PropertyType
+    DataType: String
+  - Name: Time
+    Id: g=3a83a97e19f4aa06eb311e7e304bc83a
+    Type: PropertyType
+    DataType: UtcTime
+  - Name: ReceiveTime
+    Id: g=c59e0e41696734d55fe09dc4c46953b9
+    Type: PropertyType
+    DataType: UtcTime
+  - Name: Message
+    Id: g=9388d2b15eb97c138d677b6da10ad612
+    Type: PropertyType
+    DataType: LocalizedText
+  - Name: Severity
+    Id: g=f7c1c25b2cc902712e28d05887be6a7d
+    Type: PropertyType
+    DataType: UInt16
+  - Name: Area
+    Id: g=9f2c8c6622c43d99db3b1674f5b502a0
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: PLC
+    Id: g=065285b2660ca46e8b90073598a85244
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Operator
+    Id: g=47868ba3def92de9125401e303260aab
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Id: g=d7c17e3b676bf2b57e5355099feaf5e8
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/User@BrowseName"
+      Children:
+      - Name: Mode
+        Id: g=167733d243e22df6f50bb07f45d357aa
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
