@@ -860,6 +860,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 25.0
   - Name: FontScaling
     Type: BaseDataVariableType
     DataType: Boolean

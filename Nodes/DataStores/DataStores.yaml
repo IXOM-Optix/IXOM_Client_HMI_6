@@ -8,43 +8,6 @@ Children:
   - Name: Tables
     Type: BaseObjectType
     Children:
-    - Name: ResinConcentrations
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=15;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=20
-        Direction: Forward
-      - Name: Columns
-        Id: g=4797e3b0ef8beca3dea02e55cfe6da50
-        Type: BaseObjectType
-        Children:
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-        - Name: Contactor
-          Type: StoreColumn
-          DataType: Int16
-        - Name: Top
-          Type: StoreColumn
-          DataType: Int16
-        - Name: Upper
-          Type: StoreColumn
-          DataType: Int16
-        - Name: Lower
-          Type: StoreColumn
-          DataType: Int16
-        - Name: Bottom
-          Type: StoreColumn
-          DataType: Int16
     - Name: Monthly
       Type: SQLiteStoreTable
       Children:
@@ -183,6 +146,138 @@ Children:
         - Name: Time
           Type: StoreColumn
           DataType: UtcTime
+    - Name: Maintenance_Log
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Operator
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Device_Name
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Action
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Notes
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Hours
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Quantity
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Total
+          Type: StoreColumn
+          DataType: BaseDataType
+    - Name: ShoppingCart
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Make
+          Type: StoreColumn
+          DataType: String
+        - Name: Model
+          Type: StoreColumn
+          DataType: String
+        - Name: Part_Number
+          Type: StoreColumn
+          DataType: String
+        - Name: Image_File
+          Type: StoreColumn
+          DataType: ResourceUri
+        - Name: PDF_File
+          Type: StoreColumn
+          DataType: ResourceUri
+        - Name: Website
+          Type: StoreColumn
+          DataType: String
+        - Name: Description_Line_1
+          Type: StoreColumn
+          DataType: String
+        - Name: Description_Line_2
+          Type: StoreColumn
+          DataType: String
+        - Name: Description_Line_3
+          Type: StoreColumn
+          DataType: String
+    - Name: ResinConcentrations
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Contactor
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Top
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Upper
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Lower
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Bottom
+          Type: StoreColumn
+          DataType: BaseDataType
   - Class: Reference
     Target: ns=35;i=30
     Direction: Forward
