@@ -3381,6 +3381,15 @@ Children:
         DataType: String
         ModellingRule: Optional
         Value: "Numeric"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Startup_Config"
   - Name: EU_min2
     Type: Label
     Children:
@@ -3604,6 +3613,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Startup_Config"
   - Name: EU_min_txt
     Type: Label
     Children:
@@ -3700,6 +3714,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Startup_Config"
   - Name: EU_max_txt
     Type: Label
     Children:
@@ -4131,6 +4150,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4193,8 +4217,12 @@ Children:
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
-      ModellingRule: Optional
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4253,8 +4281,12 @@ Children:
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
-      ModellingRule: Optional
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4313,8 +4345,12 @@ Children:
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
-      ModellingRule: Optional
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4674,8 +4710,12 @@ Children:
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
-      ModellingRule: Optional
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4734,8 +4774,12 @@ Children:
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
-      ModellingRule: Optional
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4790,8 +4834,12 @@ Children:
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
-      ModellingRule: Optional
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4846,8 +4894,12 @@ Children:
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
-      ModellingRule: Optional
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -5523,11 +5575,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+      Value: 4.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 434.0
+      Value: 431.0
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
@@ -5696,6 +5749,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
   - Name: Button_Man_Auto1
     Type: Button
     Children:
@@ -5843,6 +5901,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Basic_Control"
   - Name: EU_min_txt2
     Type: Label
     Children:
@@ -5901,7 +5968,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 215.0
+      Value: 219.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -5952,12 +6019,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 215.0
+      Value: 216.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 361.0
+      Value: 360.0
     - Name: Style
       Type: BaseDataVariableType
       DataType: String
@@ -6217,11 +6284,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
-    Children:
-    - Name: DynamicLink1
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "{Session}/Roles/Setpoints"
 - Name: ALZ_POP_Trend
   Id: g=680303c32e1729d1ce73513da2bdb66a
   Supertype: Panel

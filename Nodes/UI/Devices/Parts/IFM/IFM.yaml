@@ -19,11 +19,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SM8601.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SM8601.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SM8601.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SM8601.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -59,11 +59,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SM9601.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SM9601.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SM9601.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SM9601.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -99,11 +99,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SM2601.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SM2601.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SM2601.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SM2601.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -138,11 +138,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PX3228.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PX3228.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PX3228.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PX3228.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -177,11 +177,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PX9117.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PX9117.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PX9117.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PX9117.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -216,11 +216,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PX3226.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PX3226.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PX3226.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PX3226.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -255,11 +255,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PN2696.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PN2696.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/PN2696.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PN2696.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -294,11 +294,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SD6501.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SD6501.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SD6501.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SD6501.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -334,11 +334,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LDL220.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LDL220.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LDL220.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LDL220.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -373,11 +373,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LMT102.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LMT102.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LMT102.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LMT102.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -412,11 +412,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LMT104.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LMT104.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LMT104.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LMT104.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -452,11 +452,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LMT105.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LMT105.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/LMT105.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/LMT105.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -492,11 +492,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SR5900.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SR5900.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SR5900.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SR5900.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -532,11 +532,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SF6201.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SF6201.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/SF6201.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/SF6201.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -572,11 +572,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/E40174.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/E40174.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/E40174.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/E40174.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -612,11 +612,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/E43313.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/E43313.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/E43313.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/E43313.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
@@ -652,11 +652,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/E11145.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/E11145.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/E11145.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/E11145.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String

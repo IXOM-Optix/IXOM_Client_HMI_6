@@ -20,11 +20,11 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/1036A.png"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Belden/1036A.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=40;%PROJECTDIR%/IXOM/1036A.pdf"
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Belden/1036A.pdf"
   - Name: Website
     Type: BaseDataVariableType
     DataType: String
