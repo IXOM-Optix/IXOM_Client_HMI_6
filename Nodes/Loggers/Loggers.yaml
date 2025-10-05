@@ -775,6 +775,7 @@ Children:
         DataType: NodePath
         Value: "../../EventArguments/Time"
 - Name: Maintenance_Log
+  Id: g=1455d4a15878d5059d55d44a2e6f9a34
   Type: DataLogger
   Children:
   - Class: Reference
@@ -916,6 +917,7 @@ Children:
     DataType: String
     Value: "Maintenance_Log"
 - Name: ShoppingCart
+  Id: g=0daf5031236917338d972cab4bd8b273
   Type: DataLogger
   Children:
   - Class: Reference
@@ -938,7 +940,8 @@ Children:
     Children:
     - Name: Make
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
+      Value: "IFM"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -952,18 +955,10 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Make"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Model
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
+      Value: "LDL"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -977,18 +972,10 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Model"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Part_Number
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
+      Value: "LDL220"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1002,18 +989,9 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Part_Number"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Image_File
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1027,18 +1005,9 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Image_File"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: PDF_File
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1052,18 +1021,9 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/PDF_File"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Website
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1077,18 +1037,10 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Website"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Description_Line_1
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
+      Value: "Conductivity Transmitter"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1102,18 +1054,10 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Description_Line_1"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Description_Line_2
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
+      Value: "0 - 1,000 mS/cm"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1127,18 +1071,10 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Description_Line_2"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Description_Line_3
       Type: VariableToLog
-      DataType: BaseDataType
+      DataType: String
+      Value: "G1/2 external thread sealing cone"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1152,15 +1088,6 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info/Description_Line_3"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
   - Name: LogLocalTime
     Type: PropertyType
     DataType: Boolean

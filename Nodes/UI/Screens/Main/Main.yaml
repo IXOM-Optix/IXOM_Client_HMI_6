@@ -2220,3 +2220,4 @@ Children:
       ModellingRule: Optional
       Value: 200.0
 - File: Alarms/Alarms.yaml
+- File: Shopping_Cart/Shopping_Cart.yaml

@@ -226,10 +226,10 @@ Children:
           DataType: String
         - Name: Image_File
           Type: StoreColumn
-          DataType: ResourceUri
+          DataType: String
         - Name: PDF_File
           Type: StoreColumn
-          DataType: ResourceUri
+          DataType: String
         - Name: Website
           Type: StoreColumn
           DataType: String
