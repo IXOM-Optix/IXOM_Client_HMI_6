@@ -1,4 +1,4 @@
-Name: Shopping_Cart
+Name: Database
 Type: FolderType
 Children:
 - Name: Shopping_Cart
@@ -1211,7 +1211,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 25.0
-  - Name: DeleteRow1
+  - Name: DeleteRow
     Type: Button
     Children:
     - Name: Text
@@ -1393,7 +1393,11 @@ Children:
               DataType: DynamicLinkMode
               ModellingRule: Optional
               Value: 2
-  - Name: DeleteRow2
+    - Name: TableName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ShoppingCart"
+  - Name: EmptyTable
     Type: Button
     Children:
     - Name: Text
@@ -2073,7 +2077,6 @@ Children:
     - Name: SortOrder
       Type: BaseDataVariableType
       DataType: SortOrderEnum
-      Value: 1
   - Name: Button3
     Type: Button
     Children:
@@ -2111,7 +2114,7 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Roles/Basic_Control"
-  - Name: DeleteRow1
+  - Name: DeleteRow
     Type: Button
     Children:
     - Name: Text
@@ -2271,7 +2274,7 @@ Children:
           DataType: LocalizedText
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"DELETE FROM  ShoppingCart WHERE LocalTimestamp = {1:sql_literal}"}
+          Value: {"LocaleId":"en-US","Text":"DELETE FROM Maintenance_Log WHERE LocalTimestamp = {1:sql_literal}"}
         - Name: Mode
           Type: PropertyType
           DataType: DynamicLinkMode
@@ -2293,7 +2296,7 @@ Children:
               DataType: DynamicLinkMode
               ModellingRule: Optional
               Value: 2
-  - Name: DeleteRow2
+  - Name: EmptyTable
     Type: Button
     Children:
     - Name: Text
@@ -2444,99 +2447,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "DELETE FROM ShoppingCart"
-  - Name: Bottom_Lbl2
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Items in Cart"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1600.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 680.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 250.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-    - Name: TextVerticalAlignment
-      Type: BaseVariableType
-      DataType: TextVerticalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-  - Name: SpinBox1
-    Type: SpinBox
-    Children:
-    - Name: Value
-      Type: BaseDataVariableType
-      DataType: Double
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/ItemsInCart"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 170.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1660.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 715.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
   - Name: TextBox6
     Type: TextBox
     Children:
@@ -2547,7 +2457,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/Make"
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log/VariablesToLog/Operator"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2579,6 +2489,10 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 25.0
+    - Name: ValueChangeBehaviour
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
   - Name: TextBox5
     Type: TextBox
     Children:
@@ -2589,7 +2503,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/Model"
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log/VariablesToLog/Device_Name"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2631,7 +2545,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/Part_Number"
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log/VariablesToLog/Action"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2680,7 +2594,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 572.0
+      Value: 742.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -2701,13 +2615,13 @@ Children:
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
-        - Name: MethodContainer2
+        - Name: MethodContainer3
           Type: BaseObjectType
           Children:
           - Name: ns=7;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart"
+            Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -2778,48 +2692,6 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Roles/Basic_Control"
-  - Name: TextBox1
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/Description_Line_3"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 280.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1610.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 510.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
   - Name: Upper_Lbl
     Type: Label
     Children:
@@ -2827,7 +2699,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Part Number"}
+      Value: {"LocaleId":"en-US","Text":"Action"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -2883,7 +2755,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Model"}
+      Value: {"LocaleId":"en-US","Text":"Device Name"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -2939,7 +2811,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Description Line 1"}
+      Value: {"LocaleId":"en-US","Text":"Notes"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -2988,48 +2860,6 @@ Children:
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
       Value: 1
-  - Name: TextBox2
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/Description_Line_2"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 280.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1610.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 410.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
   - Name: Bottom_Lbl1
     Type: Label
     Children:
@@ -3037,7 +2867,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Description Line 3"}
+      Value: {"LocaleId":"en-US","Text":"Quantity"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -3047,7 +2877,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 480.0
+      Value: 530.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -3093,7 +2923,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Description Line 2"}
+      Value: {"LocaleId":"en-US","Text":"Hours"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -3103,7 +2933,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 380.0
+      Value: 430.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -3152,7 +2982,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/Description_Line_1"
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log/VariablesToLog/Notes"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -3178,7 +3008,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 50.0
+      Value: 110.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -3191,7 +3021,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Make"}
+      Value: {"LocaleId":"en-US","Text":"Operator"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -3240,3 +3070,241 @@ Children:
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
       Value: 1
+  - Name: Bottom_Lbl2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Total"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1580.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 630.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 250.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+  - Name: DateAndTime1
+    Type: DateTimePicker
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log/VariablesToLog/Hours"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1762.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 472.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 128.0
+    - Name: InputFormat
+      Type: BaseDataVariableType
+      DataType: DateTimePickerInputFormatEnum
+      ModellingRule: Optional
+      Value: 4
+  - Name: Bottom_Lbl3
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"hh:mm"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1460.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 480.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+  - Name: SpinBox1
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log/VariablesToLog/Quantity"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1660.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 560.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+  - Name: SpinBox2
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/Maintenance_Log/VariablesToLog/Total"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1660.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 660.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
