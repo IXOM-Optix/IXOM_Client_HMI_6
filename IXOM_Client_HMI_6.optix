@@ -162,14 +162,14 @@ Project:
    Module: FTOptix.S7TiaProfinet.Net
    Version: 1.1
  Statistics:
-  TotalNodeCount: 578959
-  Objects: 67746
-  ObjectTypes: 272
-  Variables: 510525
+  TotalNodeCount: 579628
+  Objects: 67854
+  ObjectTypes: 273
+  Variables: 511085
   VariableTypes: 153
   DataTypes: 168
   Methods: 95
-  References: 19500
+  References: 19496
   ReferenceTypes: 0
   Files: 114
  Nodes:
