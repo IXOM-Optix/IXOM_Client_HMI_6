@@ -293,7 +293,7 @@ Children:
           DataType: LocalizedText
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"{0:f2}"}
+          Value: {"LocaleId":"en-US","Text":"{0:N2}"}
         - Name: ns=7;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -302,7 +302,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_Range}/Value"
+            Value: "../../../../Alias_Range/Value"
             Children:
             - Name: Mode
               Type: BaseVariableType

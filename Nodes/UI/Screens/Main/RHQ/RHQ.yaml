@@ -76581,7 +76581,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_Range}/Value"
+                Value: "../../../../Alias_Range/Value"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -77068,7 +77068,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_Range}/Value"
+                Value: "../../../../Alias_Range/Value"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -77555,7 +77555,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_Range}/Value"
+                Value: "../../../../Alias_Range/Value"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -78042,7 +78042,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_Range}/Value"
+                Value: "../../../../Alias_Range/Value"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -78529,7 +78529,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_Range}/Value"
+                Value: "../../../../Alias_Range/Value"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -79016,7 +79016,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_Range}/Value"
+                Value: "../../../../Alias_Range/Value"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -79640,7 +79640,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -79673,7 +79673,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "3"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -80131,7 +80131,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -80164,7 +80164,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -80622,7 +80622,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -80655,7 +80655,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -81113,7 +81113,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -81146,7 +81146,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -81604,7 +81604,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -81637,7 +81637,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -82095,7 +82095,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -82128,7 +82128,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -82586,7 +82586,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -82619,7 +82619,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -83077,7 +83077,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -83110,7 +83110,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -83568,7 +83568,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -83601,7 +83601,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -84059,7 +84059,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -84092,7 +84092,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -84550,7 +84550,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -84583,7 +84583,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -85037,7 +85037,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -85070,7 +85070,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -85528,7 +85528,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -85561,7 +85561,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -86019,7 +86019,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -86052,7 +86052,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "2"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -86510,7 +86510,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -86543,7 +86543,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -87001,7 +87001,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -87034,7 +87034,7 @@ Children:
         - Name: Data_Decimal_Places
           Type: BaseDataVariableType
           DataType: String
-          Value: "1"
+          Value: "0"
         - Name: Color_In_Range
           Type: BaseDataVariableType
           DataType: Color
@@ -87492,7 +87492,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_Range}/Value"
+                  Value: "../../../../Alias_Range/Value"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
