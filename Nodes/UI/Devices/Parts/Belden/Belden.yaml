@@ -13,7 +13,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "1036A"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "1036A"

@@ -16,7 +16,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
@@ -53,12 +53,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 300.0
+    Value: 370.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 495.0
+    Value: 500.0
   - Name: Rectangle1
     Type: Rectangle
     Children:
@@ -74,12 +74,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
+      Value: 370.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 495.0
+      Value: 500.0
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
@@ -97,7 +97,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 298.0
+        Value: 348.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -107,6 +107,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
+        Value: 12.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -141,7 +142,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 235.0
+          Value: 280.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -178,7 +179,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 243.0
+          Value: 293.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -324,12 +325,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 244.0
+          Value: 227.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 119.0
         - Name: MouseDownEventHandler1
           Type: EventHandler
           Children:
@@ -449,6 +450,10 @@ Children:
           DataType: Boolean
           ModellingRule: Optional
           Value: true
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
       - Name: Image_Config
         Type: Image
         Children:
@@ -470,12 +475,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 245.0
+          Value: 293.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 115.0
+          Value: 55.0
         - Name: FillMode
           Type: BaseDataVariableType
           DataType: FillModeEnum
@@ -822,7 +827,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_PartInfo_Pop}/Part_Number"
+          Value: "{Alias_PartInfo_Pop}/PartNumber"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -848,6 +853,388 @@ Children:
         DataType: TextVerticalAlignment
         ModellingRule: Optional
         Value: 1
+    - Name: Add_to_Cart
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=40;%PROJECTDIR%/add_to_cart.png"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 303.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 171.0
+      - Name: FillMode
+        Type: BaseDataVariableType
+        DataType: FillModeEnum
+        ModellingRule: Optional
+      - Name: HitTestVisible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: MouseDownEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=7;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Commands/VariableCommands"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=7;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Set"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: VariableToModify
+                Type: BaseDataVariableType
+                DataType: VariablePointer
+                Description: {"NamespaceIndex":7,"TextId":"SetVariableToModifyDescription"}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../Visible@NodeId"
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Description: {"NamespaceIndex":7,"TextId":"SetValueDescription"}
+              - Name: ArrayIndex
+                Type: BaseDataVariableType
+                DataType: UInt32
+                Description: {"NamespaceIndex":7,"TextId":"SetArrayIndexDescription"}
+                ValueRank: ScalarOrOneDimension
+          - Name: MethodContainer3
+            Type: BaseObjectType
+            Children:
+            - Name: ns=7;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/IXOM_Client_HMI_6/NetLogic/LOG_Manual"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=7;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "LOG_ShoppingCart"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: Make
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PartInfo}/Make"
+              - Name: Model
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PartInfo}/Model"
+              - Name: PartNumber
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PartInfo}/PartNumber"
+              - Name: Description_Line_1
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PartInfo}/Description_Line_1"
+              - Name: Description_Line_2
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PartInfo}/Description_Line_2"
+              - Name: Description_Line_3
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PartInfo}/Description_Line_3"
+        - Name: EventArguments
+          Type: MouseDownEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Set_Part_info
+        Type: NetLogic
+        Children:
+        - Name: Values
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Children:
+          - Name: Make
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Loggers/ShoppingCart/VariablesToLog/Make"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Model
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Loggers/ShoppingCart/VariablesToLog/Model"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: PartNumber
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Loggers/ShoppingCart/VariablesToLog/Part_Number"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Website
+            Type: BaseDataVariableType
+            DataType: String
+          - Name: Description_Line_1
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Loggers/ShoppingCart/VariablesToLog/Description_Line_1"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Description_Line_2
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Loggers/ShoppingCart/VariablesToLog/Description_Line_2"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Description_Line_3
+            Type: BaseDataVariableType
+            DataType: String
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Loggers/ShoppingCart/VariablesToLog/Description_Line_3"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Method
+          Name: CopyMakeFromStartValuesToValues
+          Children:
+          - Name: ns=0;InputArguments
+            Type: BaseVariableType
+            DataType: Argument
+            ReferenceType: HasProperty
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+            Value: [{"TypeId":{"Id":296},"Body":{"Name":"_Make","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"_Model","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"_PartNumber","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"_Description_Line_1","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"_Description_Line_2","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"_Description_Line_3","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+      - Name: PartInfo
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Alias_PartInfo_Pop}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: MouseUpEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=7;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Pop_Right}@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=7;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ChangePanel"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: NewPanel
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":9,"TextId":"ChangePanelAliasNodeDescription"}
+                ValueRank: ScalarOrOneDimension
+        - Name: EventArguments
+          Type: MouseUpEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
   - Name: Exit
     Type: Button
     Children:
@@ -1018,3 +1405,4 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
+- File: SandPiper/SandPiper.yaml

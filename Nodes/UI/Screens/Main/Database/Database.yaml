@@ -170,7 +170,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Part_Number"}
+          Value: {"LocaleId":"en-US","Text":"Part Number"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -188,7 +188,7 @@ Children:
         - Name: OrderBy
           Type: BaseDataVariableType
           DataType: NodePath
-          Value: "{Item}/Part_Number"
+          Value: "{Item}/PartNumber"
         - Name: DataItemTemplate
           Type: DataGridLabelItemTemplate
           Children:
@@ -199,7 +199,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Item}/Part_Number"
+              Value: "{Item}/PartNumber"
       - Name: Image_File
         Type: DataGridColumn
         Children:
@@ -1095,7 +1095,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/Part_Number"
+        Value: "/Objects/IXOM_Client_HMI_6/Loggers/ShoppingCart/VariablesToLog/PartNumber"
         Children:
         - Name: Mode
           Type: BaseVariableType

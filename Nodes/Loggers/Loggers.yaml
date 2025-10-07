@@ -942,7 +942,6 @@ Children:
     - Name: Make
       Type: VariableToLog
       DataType: String
-      Value: "IFM"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -959,7 +958,6 @@ Children:
     - Name: Model
       Type: VariableToLog
       DataType: String
-      Value: "LDL"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -973,10 +971,9 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-    - Name: Part_Number
+    - Name: PartNumber
       Type: VariableToLog
       DataType: String
-      Value: "LDL220"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1041,7 +1038,6 @@ Children:
     - Name: Description_Line_1
       Type: VariableToLog
       DataType: String
-      Value: "Conductivity Transmitter"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1058,7 +1054,6 @@ Children:
     - Name: Description_Line_2
       Type: VariableToLog
       DataType: String
-      Value: "0 - 1,000 mS/cm"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1075,7 +1070,6 @@ Children:
     - Name: Description_Line_3
       Type: VariableToLog
       DataType: String
-      Value: "G1/2 external thread sealing cone"
       Children:
       - Name: LastValue
         Type: PropertyType

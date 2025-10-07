@@ -221,7 +221,7 @@ Children:
         - Name: Model
           Type: StoreColumn
           DataType: String
-        - Name: Part_Number
+        - Name: PartNumber
           Type: StoreColumn
           DataType: String
         - Name: Image_File

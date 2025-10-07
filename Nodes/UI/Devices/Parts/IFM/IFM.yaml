@@ -12,7 +12,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "SM8601"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "SM8601"
@@ -52,7 +52,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "SM9601"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "SM9601"
@@ -92,7 +92,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "SM2601"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "SM2601"
@@ -131,7 +131,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "PX3228"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "PX3228"
@@ -170,7 +170,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "PX9117"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "PX9117"
@@ -209,7 +209,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "PX3226"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "PX3226"
@@ -248,7 +248,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "PN2696"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "PN2696"
@@ -287,7 +287,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "SD6501"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "SD6501"
@@ -327,7 +327,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "LDL220"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "LDL220"
@@ -366,7 +366,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "LMT102"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "LMT102"
@@ -405,7 +405,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "LMT104"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "LMT104"
@@ -445,7 +445,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "LMT105"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "LMT105"
@@ -485,7 +485,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "SR5900"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "SR5900"
@@ -525,7 +525,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "SF6201"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "SF6201"
@@ -565,7 +565,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "E40174"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "E40174"
@@ -605,7 +605,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "E43313"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "E43313"
@@ -645,7 +645,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "E11145"
-  - Name: Part_Number
+  - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
     Value: "E11145"

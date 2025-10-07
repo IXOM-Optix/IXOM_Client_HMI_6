@@ -136,3 +136,17 @@ Children:
     Value: "yyyy-MM-dd"
   - Class: Method
     Name: Method1
+- Name: LOG_Manual
+  Id: g=51f85d46b149a9a3165c61b4f8578c12
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: LOG_ShoppingCart
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"Make","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Model","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"PartNumber","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Description_Line_1","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Description_Line_2","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Description_Line_3","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

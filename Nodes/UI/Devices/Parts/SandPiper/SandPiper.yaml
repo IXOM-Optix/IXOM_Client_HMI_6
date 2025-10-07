@@ -1,0 +1,123 @@
+Name: SandPiper
+Type: FolderType
+Children:
+- Name: S05B2P1PPNS600
+  Id: g=d4e1a2196362f1a4de53aca29ede1e5a
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Sandpiper"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "S05"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "S05B2P1PPNS600"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Sandpiper/S05.PNG"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Sandpiper/S05 NON-METALLIC MANUAL.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.sandpiperpump.com/hubfs/Service%20Manuals/S05%20NON-METALLIC%20MANUAL.pdf?hsLang=en"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1/2\" NPT,  AODD"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Solid Ball, Standard, Muffler, "
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Poly Wet-Check-NonWet, Santoprene Diaphram"
+- Name: S05_Wet
+  Id: g=57d725c3f2e10c1ccaa27a7c3d8050fa
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Sandpiper"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "S05 Wet"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "476.401.354"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Sandpiper/S05 Wet End.PNG"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Sandpiper/S05 NON-METALLIC MANUAL.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.sandpiperpump.com/hubfs/Service%20Manuals/S05%20NON-METALLIC%20MANUAL.pdf?hsLang=en"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "S05 Rebuilt Kit - Wet End"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Santoprene Diaphram & Check"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Poly Seat, PTFE Seals"
+- Name: S05_Air
+  Id: g=d0a811f195fe591d4fe976f6bf7c1eb6
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Sandpiper"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "S05 Air"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "476.219.000"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Sandpiper/S05 Air End.PNG"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/S05 NON-METALLIC MANUAL.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.sandpiperpump.com/hubfs/Service%20Manuals/S05%20NON-METALLIC%20MANUAL.pdf?hsLang=en"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "S05 Rebuilt Kit - Air End"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Seals, O-Ring, Gaskets, Retaining Rings"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Air & Pilot Valve  Assemblies"
