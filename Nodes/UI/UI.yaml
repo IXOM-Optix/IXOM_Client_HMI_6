@@ -668,7 +668,7 @@ Children:
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/IXOM_Client_HMI_6/Security/Users/oper"
+    Value: "/Objects/IXOM_Client_HMI_6/Security/Users/Newport_ME/aj"
     Children:
     - Name: Kind
       Type: PropertyType

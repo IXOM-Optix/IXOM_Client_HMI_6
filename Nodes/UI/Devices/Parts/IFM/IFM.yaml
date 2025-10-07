@@ -673,3 +673,44 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Conductor 22...18, Cable sheath: Ø 0.15....0.30 in"
+- Name: PS3208
+  Id: g=8ac8e35ab929401f3dd1087f27934e86
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PS3208"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PS3208"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PS3208.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IFM/PS3208.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/PS3208"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Hydrostatic submersible"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0,25BAR (100.4inH2O)"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "5M PUR cable"
+- File: SandPiper/SandPiper.yaml
