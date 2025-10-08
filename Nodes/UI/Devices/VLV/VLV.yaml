@@ -127,6 +127,38 @@ Children:
   - Name: Position_Auto
     Type: BaseDataVariableType
     DataType: Float
+  - Name: Part_Info
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+  - Name: Part_Accessory_1
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+  - Name: Part_Accessory_2
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+  - Name: Part_Accessory_3
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
 - Name: VLV_object
   Id: g=c90d19af072adc1ce2c90eeccc4f1fe5
   Supertype: BaseObjectType
@@ -359,6 +391,38 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
+    - Name: Part_Info
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+    - Name: Part_Accessory_1
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+    - Name: Part_Accessory_2
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+    - Name: Part_Accessory_3
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
   - Name: Comm_Fault
     Type: DigitalAlarm_IXOM
     Children:
@@ -9402,12 +9466,21 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/VLV/VLV_POP_Info"
+          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_Part_Info"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: AliasNode
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Alias_VLV_POP}@NodeId"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -14228,18 +14301,3 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-- Name: VLV_POP_Info
-  Id: g=06da24fe72ea25f5b380c26b58b160a8
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 400.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 530.0

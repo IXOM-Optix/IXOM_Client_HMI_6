@@ -8115,12 +8115,21 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/VFD/VFD_POP_Info"
+          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_Part_Info"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: AliasNode
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Alias_VFD_POP}@NodeId"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -12629,18 +12638,3 @@ Children:
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 2
-- Name: VFD_POP_Info
-  Id: g=f49d5993b4eb7516e73a61924df3d188
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 420.0

@@ -160,6 +160,7 @@ Children:
     DataType: String
     Value: "1/4\" NPT external thread"
 - Name: PX9117
+  Id: g=9bac50f4485fa233964d5cebf399199a
   Type: Part_Info
   Children:
   - Name: Make
@@ -713,4 +714,3 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "5M PUR cable"
-- File: SandPiper/SandPiper.yaml

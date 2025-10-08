@@ -1,0 +1,357 @@
+Name: Asahi
+Type: FolderType
+Children:
+- Name: '1" Asahi Actuator'
+  Id: g=1edb648d335e7f1816e394dd1ca9b1d2
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type79P"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "AP79PSN"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type79P.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type79P_Actuator.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.asahi-america.com/valves-actuation/actuators/pneumatic/series-79-pag/"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valve Actuator for Type 21"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Air Open Spring Return"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "for 1/2\" , 3/4\",  1\"  Ball Valve"
+- Name: '1.5" Asahi Actuator'
+  Id: g=826242be886a59494f84fb9fd1a8e8fe
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type79P"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "BP79PSN"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type79P.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type79P_Actuator.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.asahi-america.com/valves-actuation/actuators/pneumatic/series-79-pag/"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valve Actuator for Type 21"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Air Open Spring Return"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "for 1.25\" ,1.5\" Ball Valve"
+- Name: '2.5" 1" Asahi Actuator'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type79P"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "CP79PSN"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type79P.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type79P_Actuator.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.asahi-america.com/valves-actuation/actuators/pneumatic/series-79-pag/"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valve Actuator for Type 21"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Air Open Spring Return"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "for 2\" 2.5\"  Ball Valve"
+- Name: '1" Asahi Ball Valve'
+  Id: g=1e43b11a4763936923b26ec1daa48c3b
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type21"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "6700-010"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21_Ball_Valve.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.asahi-america.com/valves-actuation/thermoplastic-valves/ball-valves/type-21-21a/"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PVC Ball Valve"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1 in. EPDM"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Socket & Threaded"
+- Name: '1.5" Asahi Ball Valve'
+  Id: g=85c5469a598a01ecd974e331d7c391b8
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type21"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "6700-015"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21_Ball_Valve.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.asahi-america.com/valves-actuation/thermoplastic-valves/ball-valves/type-21-21a/"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PVC Ball Valve"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1.5 in. EPDM"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Socket & Threaded"
+- Name: '2" Asahi Ball Valve'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type21"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "6700-020"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21_Ball_Valve.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.asahi-america.com/valves-actuation/thermoplastic-valves/ball-valves/type-21-21a/"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PVC Ball Valve"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2 in. EPDM"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Socket & Threaded"
+- Name: '1" Asahi Ball & Actuator'
+  Id: g=759ebe77bda13ccc4ab2389fadade8bd
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type21 & Type 79P"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2903-010"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21-Type79P.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PVC Ball Valve & Actuator"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1 in. EPDM Socket & Threaded"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Air Open Spring Return"
+- Name: '1.5" Asahi Ball & Actuator'
+  Id: g=47a4f8e4bcc3a482ce487cdb1b1d4793
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type21 & Type 79P"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2903-015"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21-Type79P.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PVC Ball Valve & Actuator"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1.5 in. EPDM Socket & Threaded"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Air Open Spring Return"
+- Name: '2" Asahi Ball & Actuator'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asahi"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Type21 & Type 79P"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2903-020"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/Asahi/Type21-Type79P.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PVC Ball Valve & Actuator"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2 in. EPDM Socket & Threaded"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Air Open Spring Return"

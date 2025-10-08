@@ -1,2 +1,156 @@
 Name: GF
 Type: FolderType
+Children:
+- Name: Mag_GF_14_Blind_420
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GF"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Signet"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "3-2551-P0-12"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/GF/2551_Blind.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Insertion Magmeter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1-4\" (DN125-DN200)"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "No Display,  4-20mA output"
+- Name: Mag_GF_14_Display_420
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GF"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Signet"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "3-2551-P0-14"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/GF/2551_Display.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Insertion Magmeter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1-4\" (DN125-DN200)"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Display,  4-20mA output"
+- Name: Mag_GF_58_Blind_420
+  Id: g=18e98c6ef22f538b3ec8a46c507963aa
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GF"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Signet"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "3-2551-P1-12"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/GF/2551_Blind.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Insertion Magmeter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "5-8\" (DN125-DN200)"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "No Display,  4-20mA output"
+- Name: Mag_GF_58_Display_420
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GF"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Signet"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "3-2551-P1-14"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/GF/2551_Display.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Insertion Magmeter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "5-8\" (DN125-DN200)"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Display,  4-20mA output"

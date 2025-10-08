@@ -2943,12 +2943,21 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/ALZ/ALZ_POP_Info"
+          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_Part_Info"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: AliasNode
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Alias_ALZ_POP}@NodeId"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -7657,7 +7666,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/PartInfo_POP"
+              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_AcessoryPartInfo"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -7796,7 +7805,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/PartInfo_POP"
+              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_AcessoryPartInfo"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -7954,7 +7963,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/PartInfo_POP"
+              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_AcessoryPartInfo"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId

@@ -3,7 +3,9 @@ Type: FolderType
 Children:
 - File: Belden/Belden.yaml
 - File: GF/GF.yaml
+- File: SandPiper/SandPiper.yaml
 - File: IFM/IFM.yaml
+- File: Asahi/Asahi.yaml
 - Name: Part_Info
   Id: g=75af046a2f3ca9883de68d6f68e0906c
   Supertype: BaseObjectType
@@ -44,7 +46,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-- Name: PartInfo_POP
+- Name: Pop_AcessoryPartInfo
   Id: g=0a4a549bf1edee0f2aece1f91f4c15db
   Supertype: Panel
   ReferenceType: HasComponent
@@ -1471,7 +1473,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_ALZ_POP}/Part_Info/Image_File"
+              Value: "{Alias_PartInfo}/Part_Info/Image_File"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -1562,7 +1564,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ALZ_POP}/Part_Info/PDF_File"
+                  Value: "{Alias_PartInfo}/Part_Info/PDF_File"
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
@@ -1708,7 +1710,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ALZ_POP}/Part_Info/Website@Value"
+                  Value: "{Alias_PartInfo}/Part_Info/Website@Value"
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
@@ -1834,7 +1836,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Info/Make"
+        Value: "{Alias_PartInfo}/Part_Info/Make"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1944,7 +1946,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Info/Model"
+        Value: "{Alias_PartInfo}/Part_Info/Model"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2149,7 +2151,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Info/Description_Line_1"
+        Value: "{Alias_PartInfo}/Part_Info/Description_Line_1"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2199,7 +2201,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Info/Description_Line_2"
+        Value: "{Alias_PartInfo}/Part_Info/Description_Line_2"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2249,7 +2251,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Info/Description_Line_3"
+        Value: "{Alias_PartInfo}/Part_Info/Description_Line_3"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2299,7 +2301,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Info/Part_Number"
+        Value: "{Alias_PartInfo}/Part_Info/PartNumber"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2349,7 +2351,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 250.0
-  - Name: Label19
+  - Name: Acc_1
     Type: Label
     Children:
     - Name: Text
@@ -2359,7 +2361,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Accessory_1/Model"
+        Value: "{Alias_PartInfo}/Part_Accessory_1@BrowseName"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2375,7 +2377,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 346.0
+      Value: 344.0
     - Name: TextHorizontalAlignment
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
@@ -2399,7 +2401,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-  - Name: Label20
+  - Name: Acc_2
     Type: Label
     Children:
     - Name: Text
@@ -2409,7 +2411,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Accessory_2/Model"
+        Value: "{Alias_PartInfo}/Part_Accessory_2@BrowseName"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2425,7 +2427,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 406.0
+      Value: 404.0
     - Name: TextHorizontalAlignment
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
@@ -2449,7 +2451,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-  - Name: Label21
+  - Name: Acc_3
     Type: Label
     Children:
     - Name: Text
@@ -2459,7 +2461,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Accessory_3/Model"
+        Value: "{Alias_PartInfo}/Part_Accessory_3@BrowseName"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2475,7 +2477,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 466.0
+      Value: 464.0
     - Name: TextHorizontalAlignment
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
@@ -2511,12 +2513,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 3.0
+      Value: 4.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 346.0
+      Value: 344.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -2574,7 +2576,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/PartInfo_POP"
+              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_AcessoryPartInfo"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -2585,146 +2587,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_ALZ_POP}/Part_Accessory_1@NodeId"
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: BottomMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-  - Name: Button4
-    Type: Button
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Accessory 2"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 3.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 406.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 100.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-    - Name: BackgroundColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#b3b3b3"
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=7;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Pop_Right}@NodeId"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: ns=7;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "ChangePanel"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: NewPanel
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/PartInfo_POP"
-            - Name: AliasNode
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":9,"TextId":"ChangePanelAliasNodeDescription"}
-              ValueRank: ScalarOrOneDimension
-              Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Alias_ALZ_POP}/Part_Accessory_2@NodeId"
+                Value: "{Alias_PartInfo}/Part_Accessory_1@NodeId"
       - Name: EventArguments
         Type: MouseClickEvent
         Children:
@@ -2786,7 +2649,7 @@ Children:
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "{0} = 0"
+          Value: "{0} != \"\""
         - Name: ns=7;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -2795,25 +2658,25 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_ALZ_POP}/Part_Accessory_2@Value"
-  - Name: Button5
+            Value: "../../../../Acc_1/Text@Value"
+  - Name: Button4
     Type: Button
     Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Accessory 3"}
+      Value: {"LocaleId":"en-US","Text":"Accessory 2"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 3.0
+      Value: 4.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 466.0
+      Value: 404.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -2871,7 +2734,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/PartInfo_POP"
+              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_AcessoryPartInfo"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -2882,7 +2745,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_ALZ_POP}/Part_Accessory_3@NodeId"
+                Value: "{Alias_PartInfo}/Part_Accessory_2@NodeId"
       - Name: EventArguments
         Type: MouseClickEvent
         Children:
@@ -2935,6 +2798,183 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0} != \"\""
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Acc_2/Text@Value"
+  - Name: Button5
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Accessory 3"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 4.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 464.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#b3b3b3"
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=7;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Pop_Right}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=7;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Pop_AcessoryPartInfo"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":9,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Alias_PartInfo}/Part_Accessory_3@NodeId"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0} != \"\""
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Acc_3/Text@Value"
   - Name: Add_to_Cart
     Type: Image
     Children:
@@ -3236,7 +3276,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Part_Info@Pointer@NodeId"
+        Value: "{Alias_PartInfo}/Part_Info@Pointer@NodeId"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -3250,28 +3290,3 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
-  - Name: Alias_PartInfo1
-    Type: Alias
-    DataType: NodeId
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
-  - Name: Alias_PartInfo2
-    Type: Alias
-    DataType: NodeId
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
-  - Name: Alias_PartInfo3
-    Type: Alias
-    DataType: NodeId
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
