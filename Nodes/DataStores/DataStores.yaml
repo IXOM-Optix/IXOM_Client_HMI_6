@@ -192,6 +192,7 @@ Children:
           Type: StoreColumn
           DataType: BaseDataType
     - Name: ShoppingCart
+      Id: g=1b293779ff5fa595b7c8a1560ba5afa0
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -252,6 +253,7 @@ Children:
           Type: StoreColumn
           DataType: BaseDataType
     - Name: ResinConcentrations
+      Id: g=ac965f0d8fd1a7892d5005b666c93e82
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
