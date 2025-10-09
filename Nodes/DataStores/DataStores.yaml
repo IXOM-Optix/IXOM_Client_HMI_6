@@ -248,6 +248,9 @@ Children:
         - Name: RFQ_Date
           Type: StoreColumn
           DataType: DateTime
+        - Name: Image_File
+          Type: StoreColumn
+          DataType: BaseDataType
     - Name: ResinConcentrations
       Type: SQLiteStoreTable
       Children:
