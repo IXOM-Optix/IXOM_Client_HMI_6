@@ -196,7 +196,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Email/Email"
+      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Email/Email_Type"
   - Name: FontSize
     Type: BaseDataVariableType
     DataType: Size
@@ -745,7 +745,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Email/Email"
+      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Email/Email_Type"
   - Name: TextBox1
     Type: TextBox
     Children:
@@ -1249,7 +1249,7 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
-- Name: Email
+- Name: Email_Type
   Id: g=2643a2fd8de8675f085994a39256501f
   Supertype: BaseObjectType
   Children:
@@ -1290,7 +1290,7 @@ Children:
       Value: "julia.savage@ixom.com"
 - Name: Newport_ME
   Id: g=ea595acaef3bbfa55844cfe72bef15c2
-  Type: Email
+  Type: Email_Type
   Children:
   - Name: To
     Type: BaseDataVariableType
