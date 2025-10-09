@@ -6413,6 +6413,17 @@ Children:
     - Name: CurrentTabIndex
       Type: BaseDataVariableType
       DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Default_Tab_Index"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Class: Reference
       Target: ns=9;i=1181
       Direction: Forward
@@ -6822,6 +6833,9 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
+  - Name: Default_Tab_Index
+    Type: BaseDataVariableType
+    DataType: Int16
 - Name: RegenData_MagnaPak_Info_Tab
   Id: g=fbc3ea045452099674cf814849ce2ff8
   Supertype: Panel
