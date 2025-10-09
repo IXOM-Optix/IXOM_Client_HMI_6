@@ -1083,6 +1083,54 @@ Children:
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
+    - Name: Quantity
+      Type: VariableToLog
+      DataType: Int16
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+    - Name: Status
+      Type: VariableToLog
+      DataType: String
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+    - Name: RFQ_Date
+      Type: VariableToLog
+      DataType: DateTime
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
   - Name: LogLocalTime
     Type: PropertyType
     DataType: Boolean
@@ -1094,6 +1142,10 @@ Children:
     Type: PropertyType
     DataType: String
     Value: "ShoppingCart"
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: ResinConcentrations
   Id: g=9d6f8125670401c1526d13a1c6641e9a
   Type: DataLogger

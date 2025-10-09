@@ -90686,7 +90686,7 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{Monthly_Report_Alias}/Index"
-      - Name: Label17
+      - Name: Month
         Type: Label
         Children:
         - Name: Text

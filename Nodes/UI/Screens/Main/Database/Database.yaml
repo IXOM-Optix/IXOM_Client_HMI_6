@@ -62,11 +62,11 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Add on ...."}
+          Value: {"LocaleId":"en-US","Text":"Quantity"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
-          Value: 250.0
+          Value: 65.0
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
@@ -80,7 +80,7 @@ Children:
         - Name: OrderBy
           Type: BaseDataVariableType
           DataType: NodePath
-          Value: "{Item}/LocalTimestamp"
+          Value: "{Item}/Quantity"
         - Name: DataItemTemplate
           Type: DataGridLabelItemTemplate
           Children:
@@ -91,7 +91,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Item}/LocalTimestamp"
+              Value: "{Item}/Quantity"
       - Name: Make
         Type: DataGridColumn
         Children:

@@ -224,9 +224,6 @@ Children:
         - Name: PartNumber
           Type: StoreColumn
           DataType: String
-        - Name: Image_File
-          Type: StoreColumn
-          DataType: String
         - Name: PDF_File
           Type: StoreColumn
           DataType: String
@@ -242,6 +239,15 @@ Children:
         - Name: Description_Line_3
           Type: StoreColumn
           DataType: String
+        - Name: Quantity
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: Status
+          Type: StoreColumn
+          DataType: BaseDataType
+        - Name: RFQ_Date
+          Type: StoreColumn
+          DataType: DateTime
     - Name: ResinConcentrations
       Type: SQLiteStoreTable
       Children:

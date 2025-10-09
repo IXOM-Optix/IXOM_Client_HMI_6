@@ -162,15 +162,15 @@ Project:
    Module: FTOptix.S7TiaProfinet.Net
    Version: 1.1
  Statistics:
-  TotalNodeCount: 581677
-  Objects: 67958
-  ObjectTypes: 271
-  Variables: 513026
+  TotalNodeCount: 581673
+  Objects: 67945
+  ObjectTypes: 272
+  Variables: 513035
   VariableTypes: 153
   DataTypes: 168
-  Methods: 101
-  References: 19504
+  Methods: 100
+  References: 19496
   ReferenceTypes: 0
-  Files: 117
+  Files: 118
  Nodes:
  - File: Nodes/IXOM_Client_HMI_6.yaml

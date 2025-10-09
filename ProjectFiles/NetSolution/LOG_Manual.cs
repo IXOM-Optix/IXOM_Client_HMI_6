@@ -37,7 +37,9 @@ public class LOG_Manual : BaseNetLogic
         string PartNumber,
         string Description_Line_1,
         string Description_Line_2,
-        string Description_Line_3)
+        string Description_Line_3,
+        string Quantity,
+        string Status)
     {
 
 
@@ -58,6 +60,8 @@ public class LOG_Manual : BaseNetLogic
         var Log_Description_Line_1 = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/Description_Line_1");
         var Log_Description_Line_2 = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/Description_Line_2");
         var Log_Description_Line_3 = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/Description_Line_3");
+        var Log_Quantity = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/Quantity");
+        var Log_Status = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/Status");
 
         // Move values using .Value command
         if (Make != null && Log_Make != null)
@@ -112,6 +116,25 @@ public class LOG_Manual : BaseNetLogic
         {
             Log.Warning("Cannot move _Description_Line_3 value - source or target IUAVariable not found");
         }
+
+        if (Quantity != null && Log_Quantity != null)
+        {
+            Log_Quantity.Value = Quantity;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Quantity value - source or target IUAVariable not found");
+        }
+
+        if (Status != null && Log_Status != null)
+        {
+            Log_Status.Value = Status;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Status value - source or target IUAVariable not found");
+        }
+      
 
         // Wait 5 seconds
         System.Threading.Thread.Sleep(5000);

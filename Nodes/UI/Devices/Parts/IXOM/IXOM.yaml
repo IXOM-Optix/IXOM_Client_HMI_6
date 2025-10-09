@@ -1,0 +1,40 @@
+Name: IXOM
+Type: FolderType
+Children:
+- Name: 'US-DOC_Drum'
+  Id: g=7973fff4ff54313b7770aa53e1451343
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Model"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "asdfasdf"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX DOC Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Drume size"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "info"
