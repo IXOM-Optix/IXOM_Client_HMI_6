@@ -20,6 +20,7 @@ Children:
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/Drum.png"
   - Name: PDF_File
     Type: BaseDataVariableType
     DataType: ResourceUri
@@ -33,8 +34,45 @@ Children:
   - Name: Description_Line_2
     Type: BaseDataVariableType
     DataType: String
-    Value: "Drume size"
+    Value: "200 Liter Drum"
   - Name: Description_Line_3
     Type: BaseDataVariableType
     DataType: String
-    Value: "info"
+    Value: "180 Liters Resin"
+- Name: 'US-DOC_IBC'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DOC"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXDOC-900IBC"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/IBC.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX DOC Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1000 Liter IBC"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "900 Liters Resin"
