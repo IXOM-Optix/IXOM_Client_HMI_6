@@ -1,0 +1,32 @@
+Name: Build_Runtimes
+Type: FolderType
+Children:
+- Name: PrepDelete_Newport
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: DeleteAllConfiguredObjects
+  - Class: Method
+    Name: DeleteCommDriversOnly
+  - Class: Method
+    Name: DeleteDataStoresOnly
+  - Class: Method
+    Name: DeleteDeploymentOnly
+  - Class: Method
+    Name: DeleteObjectsByCategory
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"categoryFilter","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: DeleteUIScreensOnly
+  - Class: Method
+    Name: ListConfiguredObjects
