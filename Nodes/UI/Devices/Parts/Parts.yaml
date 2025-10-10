@@ -3181,7 +3181,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 50.0
+    Value: 100.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
@@ -3468,7 +3468,7 @@ Children:
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 2
+      Value: 1
     - Name: VerticalAlignment
       Type: BaseVariableType
       DataType: VerticalAlignment
@@ -3496,12 +3496,11 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 47.0
+      Value: 50.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: -48.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -3539,6 +3538,11 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../Qty_Input"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
   - Name: Qty_Input
     Type: BaseDataVariableType
     DataType: Boolean

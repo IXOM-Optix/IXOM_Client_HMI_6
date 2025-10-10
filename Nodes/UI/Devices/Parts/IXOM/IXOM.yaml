@@ -1,7 +1,44 @@
 Name: IXOM
 Type: FolderType
 Children:
-- Name: 'US-DOC_Drum'
+- Name: 'US-DOC_Half_Drum'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DOC"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXDOC-90DRUM"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/Drum.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX DOC Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "100 Liter Drum"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "90 Liters Resin"
+- Name: 'US-DOC_Full_Drum'
   Id: g=7973fff4ff54313b7770aa53e1451343
   Type: Part_Info
   Children:
@@ -12,11 +49,11 @@ Children:
   - Name: Model
     Type: BaseDataVariableType
     DataType: String
-    Value: "Model"
+    Value: "DOC"
   - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
-    Value: "asdfasdf"
+    Value: "MIEXDOC-180DRUM"
   - Name: Image_File
     Type: BaseDataVariableType
     DataType: ResourceUri
@@ -68,6 +105,228 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "MIEX DOC Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1000 Liter IBC"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "900 Liters Resin"
+- Name: 'US-GOLD_Full_Drum'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GOLD"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXGOLD-180DRUM"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/Drum.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX GOLD Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "200 Liter Drum"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "180 Liters Resin"
+- Name: 'US-GOLD_IBC'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GOLD"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXGOLD-900IBC"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/IBC.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX GOLD Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1000 Liter IBC"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "900 Liters Resin"
+- Name: 'US-DOC_Full_Drum_SR'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DOC"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXDOC-SR-180DRUM"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/Drum.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX DOC Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "200 Liter Drum"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "180 Liters Resin"
+- Name: 'US-DOC_IBC_SR'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DOC"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXDOC-SR-900IBC"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/IBC.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX DOC Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1000 Liter IBC"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "900 Liters Resin"
+- Name: 'US-GOLD_Full_Drum_SR'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GOLD"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXGOLD-SR-180DRUM"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/Drum.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX GOLD Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "200 Liter Drum"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "180 Liters Resin"
+- Name: 'US-GOLD_IBC_SR'
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "GOLD"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXGOLD-SR-900IBC"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/IBC.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX GOLD Resin"
   - Name: Description_Line_2
     Type: BaseDataVariableType
     DataType: String
