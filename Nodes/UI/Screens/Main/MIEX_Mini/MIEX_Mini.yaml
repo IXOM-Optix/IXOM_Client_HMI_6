@@ -90614,17 +90614,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "0"
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/PLC_Name"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
       - Name: Area
         Type: BaseDataVariableType
         DataType: String
@@ -90675,6 +90664,34 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../MonthlyData"
+      - Name: MainBox
+        Type: Rectangle
+        Children:
+        - Name: Box_Title
+          Type: Rectangle
+          Children:
+          - Name: Label1
+            Type: Label
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 14.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -15.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 412.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 670.0
       - Name: SpinBox1
         Type: SpinBox
         Children:
@@ -90697,26 +90714,6 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{Monthly_Report_Alias}/Time_Stamp"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 14.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: -15.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 412.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 670.0
       - Name: XX_Months_Ago
         Type: ScaleLayout
         Children:
@@ -90770,7 +90767,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -91261,7 +91258,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -91752,7 +91749,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -92243,7 +92240,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -92734,7 +92731,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -93225,7 +93222,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -93716,7 +93713,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -94207,7 +94204,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -94698,7 +94695,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -95189,7 +95186,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -95680,7 +95677,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -96167,7 +96164,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -96658,7 +96655,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -97149,7 +97146,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -97640,7 +97637,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -98131,7 +98128,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:
@@ -98622,7 +98619,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "../../../../../../Alias_Range"
+                        Value: "../../../../../../Alias_Range@Pointer"
               - Name: EventArguments
                 Type: MouseClickEvent
                 Children:

@@ -17382,7 +17382,7 @@ Children:
     - Name: Panel_Name
       Type: BaseDataVariableType
       DataType: String
-      Value: "Main_Magna_Pak_Regen_1_2"
+      Value: "Main_Newport_ME_Regen_1_2"
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -17564,7 +17564,7 @@ Children:
     - Name: Panel_Name
       Type: BaseDataVariableType
       DataType: String
-      Value: "Main_Newport_Page_7"
+      Value: "Main_Newport_ME_Page_7"
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size

@@ -491,7 +491,7 @@ Children:
       - Name: Data_Decimal_Places
         Type: BaseDataVariableType
         DataType: String
-        Value: "1"
+        Value: "3"
       - Name: Read_Only
         Type: BaseDataVariableType
         DataType: Boolean

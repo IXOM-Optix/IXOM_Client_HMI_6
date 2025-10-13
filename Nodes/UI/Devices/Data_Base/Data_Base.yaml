@@ -20243,7 +20243,7 @@ Children:
     - Name: Description
       Type: BaseDataVariableType
       DataType: String
-      Value: "Contactor Average Flow Rate"
+      Value: "Contactor AVG Flow Rate"
     - Name: Units
       Type: BaseDataVariableType
       DataType: String
@@ -20535,7 +20535,7 @@ Children:
     - Name: Units
       Type: BaseDataVariableType
       DataType: String
-      Value: "0"
+      Value: "%"
   - Name: Power_Consumed
     Type: Range_UDT
     Children:
@@ -20658,6 +20658,17 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/PLC_Name"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
   - Name: Area
     Type: BaseDataVariableType
     DataType: String
@@ -20719,6 +20730,141 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../MonthlyData"
+  - Name: MainBox
+    Type: Rectangle
+    Children:
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 520.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 860.0
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#e4e4e4"
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#b3b3b3"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: Box_Title
+      Type: Rectangle
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -14.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 175.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Monthly Reports"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 9.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 86.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#3b3b3b"
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 18.0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 5.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#e4e4e4"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#b3b3b3"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: FontScaling
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
   - Name: SpinBox1
     Type: SpinBox
     Children:
@@ -20829,11 +20975,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 22.0
-  - Name: FontScaling
-    Type: BaseDataVariableType
-    DataType: Boolean
-    ModellingRule: Optional
-    Value: true
   - Name: XX_Months_Ago
     Type: ScaleLayout
     Children:
@@ -35141,7 +35282,7 @@ Children:
       - Name: Description
         Type: BaseDataVariableType
         DataType: String
-        Value: "Contactor Average Flow Rate"
+        Value: "Contactor AVG Flow Rate"
       - Name: Units
         Type: BaseDataVariableType
         DataType: String
@@ -35433,7 +35574,7 @@ Children:
       - Name: Units
         Type: BaseDataVariableType
         DataType: String
-        Value: "0"
+        Value: "%"
     - Name: Power_Consumed
       Type: Range_UDT
       Children:
@@ -36544,7 +36685,7 @@ Children:
       - Name: Description
         Type: BaseDataVariableType
         DataType: String
-        Value: "Contactor Average Flow Rate"
+        Value: "Contactor AVG Flow Rate"
       - Name: Units
         Type: BaseDataVariableType
         DataType: String
@@ -36836,7 +36977,7 @@ Children:
       - Name: Units
         Type: BaseDataVariableType
         DataType: String
-        Value: "0"
+        Value: "%"
     - Name: Power_Consumed
       Type: Range_UDT
       Children:

@@ -306,6 +306,16 @@ Children:
           DataType: Boolean
           ModellingRule: Optional
           Value: true
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 8.0
       - Name: Image_WWW
         Type: Image
         Children:
@@ -327,12 +337,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 227.0
+          Value: 230.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 119.0
+          Value: 3.0
         - Name: MouseDownEventHandler1
           Type: EventHandler
           Children:
@@ -482,7 +492,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 55.0
         - Name: FillMode
           Type: BaseDataVariableType
           DataType: FillModeEnum
@@ -492,6 +501,21 @@ Children:
           DataType: Boolean
           ModellingRule: Optional
           Value: true
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 8.0
       - Name: Shoppin_Cart1
         Type: Shoppin_Cart
         Children:
@@ -778,6 +802,26 @@ Children:
         - Name: Qty_Input
           Type: BaseDataVariableType
           DataType: Boolean
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 3.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 8.0
     - Name: Label15
       Type: Label
       Children:
