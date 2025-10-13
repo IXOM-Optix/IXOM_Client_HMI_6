@@ -197,7 +197,7 @@ Children:
   - Name: Model
     Type: BaseDataVariableType
     DataType: String
-    Value: "DOC"
+    Value: "Small Resin DOC"
   - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
@@ -215,7 +215,7 @@ Children:
   - Name: Description_Line_1
     Type: BaseDataVariableType
     DataType: String
-    Value: "MIEX DOC Resin"
+    Value: "MIEX Small Bead DOC Resin"
   - Name: Description_Line_2
     Type: BaseDataVariableType
     DataType: String
@@ -234,7 +234,7 @@ Children:
   - Name: Model
     Type: BaseDataVariableType
     DataType: String
-    Value: "DOC"
+    Value: "Small Resin DOC"
   - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
@@ -252,7 +252,7 @@ Children:
   - Name: Description_Line_1
     Type: BaseDataVariableType
     DataType: String
-    Value: "MIEX DOC Resin"
+    Value: "MIEX Small Bead DOC Resin"
   - Name: Description_Line_2
     Type: BaseDataVariableType
     DataType: String
@@ -271,7 +271,7 @@ Children:
   - Name: Model
     Type: BaseDataVariableType
     DataType: String
-    Value: "GOLD"
+    Value: "Small Resin GOLD"
   - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
@@ -289,7 +289,7 @@ Children:
   - Name: Description_Line_1
     Type: BaseDataVariableType
     DataType: String
-    Value: "MIEX GOLD Resin"
+    Value: "MIEX Small Bead GOLD Resin"
   - Name: Description_Line_2
     Type: BaseDataVariableType
     DataType: String
@@ -308,7 +308,7 @@ Children:
   - Name: Model
     Type: BaseDataVariableType
     DataType: String
-    Value: "GOLD"
+    Value: "Small Resin GOLD"
   - Name: PartNumber
     Type: BaseDataVariableType
     DataType: String
@@ -326,7 +326,7 @@ Children:
   - Name: Description_Line_1
     Type: BaseDataVariableType
     DataType: String
-    Value: "MIEX GOLD Resin"
+    Value: "MIEX Small Bead GOLD Resin"
   - Name: Description_Line_2
     Type: BaseDataVariableType
     DataType: String
