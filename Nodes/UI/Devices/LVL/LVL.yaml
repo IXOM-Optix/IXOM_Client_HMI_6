@@ -2069,7 +2069,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Value: "{Session}/Replay_Time_Local"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -2088,13 +2088,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
+        Value: "{Session}/Replay_Enable"
   - Name: Rectangle_L
     Type: Rectangle
     Children:
@@ -2546,7 +2540,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_LVL}/Rewind@Value"
+            Value: "../../../../Replay_LVL/Replay"
   - Name: Tagname
     Type: Label
     Children:

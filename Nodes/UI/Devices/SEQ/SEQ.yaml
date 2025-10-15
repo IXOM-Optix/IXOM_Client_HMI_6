@@ -1930,7 +1930,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -1939,7 +1939,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/STS"
+          Value: "../../../Replay_SEQ/Replay/STS"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -1964,7 +1964,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -1973,7 +1973,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Step_Number"
+          Value: "../../../Replay_SEQ/Replay/Step_Number"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -1998,7 +1998,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_SEQ/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -2007,7 +2007,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+          Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -2076,26 +2076,10 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
+          Value: "{Session}/Replay_Time_Local"
       - Name: STS
         Type: BaseDataVariableType
         DataType: Int32
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
       - Name: Step_Number
         Type: BaseDataVariableType
         DataType: Int16
@@ -2170,6 +2154,10 @@ Children:
       - Name: Last_Pause_Reason
         Type: BaseDataVariableType
         DataType: Int16
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Replay_Enable"
   - Name: Rectangle_OOR
     Type: Rectangle
     Children:
@@ -2258,7 +2246,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind"
+                    Value: "../../../../../../../../Replay_SEQ/Replay"
                 - Name: TrueValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -2267,7 +2255,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind/Step_Number"
+                    Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                 - Name: FalseValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -2462,7 +2450,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind@Value"
+            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: Tagname
     Type: Label
     Children:
@@ -5408,7 +5396,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -5417,7 +5405,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/STS"
+          Value: "../../../Replay_SEQ/Replay/STS"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -5442,7 +5430,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -5451,7 +5439,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Step_Number"
+          Value: "../../../Replay_SEQ/Replay/Step_Number"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -5476,7 +5464,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_SEQ/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -5485,7 +5473,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+          Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -5554,26 +5542,10 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
+          Value: "{Session}/Replay_Time_Local"
       - Name: STS
         Type: BaseDataVariableType
         DataType: Int32
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
       - Name: Step_Number
         Type: BaseDataVariableType
         DataType: Int16
@@ -5648,6 +5620,10 @@ Children:
       - Name: Last_Pause_Reason
         Type: BaseDataVariableType
         DataType: Int16
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Replay_Enable"
   - Name: Rectangle_OOR
     Type: Rectangle
     Children:
@@ -5736,7 +5712,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind"
+                    Value: "../../../../../../../../Replay_SEQ/Replay"
                 - Name: TrueValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -5745,7 +5721,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind/Step_Number"
+                    Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                 - Name: FalseValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -5918,6 +5894,29 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "!{0}"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: StepDescriptionComboBox
     Type: ComboBox
     Children:
@@ -10267,7 +10266,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -10276,7 +10275,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/STS"
+          Value: "../../../Replay_SEQ/Replay/STS"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -10301,7 +10300,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -10310,7 +10309,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Step_Number"
+          Value: "../../../Replay_SEQ/Replay/Step_Number"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -10335,7 +10334,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_SEQ/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -10344,7 +10343,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+          Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -10413,26 +10412,10 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
+          Value: "{Session}/Replay_Time_Local"
       - Name: STS
         Type: BaseDataVariableType
         DataType: Int32
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
       - Name: Step_Number
         Type: BaseDataVariableType
         DataType: Int16
@@ -10507,6 +10490,10 @@ Children:
       - Name: Last_Pause_Reason
         Type: BaseDataVariableType
         DataType: Int16
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Replay_Enable"
   - Name: CommFail
     Type: PolyLine
     Children:
@@ -10875,7 +10862,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind"
+                    Value: "../../../../../../../../Replay_SEQ/Replay"
                 - Name: TrueValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -10884,7 +10871,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind/Step_Number"
+                    Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                 - Name: FalseValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -11056,6 +11043,29 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "!{0}"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: StepDescriptionComboBox
     Type: ComboBox
     Children:
@@ -11680,7 +11690,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -11689,7 +11699,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/STS"
+          Value: "../../../Replay_SEQ/Replay/STS"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -11714,7 +11724,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -11723,7 +11733,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Step_Number"
+          Value: "../../../Replay_SEQ/Replay/Step_Number"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -11748,7 +11758,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_SEQ/Rewind"
+          Value: "../../../Replay_SEQ/Replay"
       - Name: TrueValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -11757,7 +11767,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+          Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: Int16
@@ -11826,26 +11836,10 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
+          Value: "{Session}/Replay_Time_Local"
       - Name: STS
         Type: BaseDataVariableType
         DataType: Int32
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
       - Name: Step_Number
         Type: BaseDataVariableType
         DataType: Int16
@@ -11920,6 +11914,10 @@ Children:
       - Name: Last_Pause_Reason
         Type: BaseDataVariableType
         DataType: Int16
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Replay_Enable"
   - Name: Rectangle_OOR
     Type: Rectangle
     Children:
@@ -12008,7 +12006,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind"
+                    Value: "../../../../../../../../Replay_SEQ/Replay"
                 - Name: TrueValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -12017,7 +12015,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "{Alias_SEQ}/Rewind/Step_Number"
+                    Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                 - Name: FalseValue
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -12190,6 +12188,29 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "!{0}"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: StepDescriptionComboBox
     Type: ComboBox
     Children:

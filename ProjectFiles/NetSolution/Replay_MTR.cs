@@ -1,5 +1,6 @@
 #region Using directives
 using System;
+using System.Threading;
 using UAManagedCore;
 using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.UI;
@@ -38,6 +39,10 @@ public class Replay_MTR : BaseNetLogic
 
     public override void Start()
     {
+    // Add 100ms delay before any other code is executed
+    //had to add to give time for variables to initialize
+    Thread.Sleep(100);
+        
         // Insert code to be executed when the user-defined logic is started
         _PLC = LogicObject.GetVariable("PLC");
         _Area = LogicObject.GetVariable("Area");

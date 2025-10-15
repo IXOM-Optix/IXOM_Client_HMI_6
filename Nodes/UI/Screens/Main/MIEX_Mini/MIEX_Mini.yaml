@@ -252,7 +252,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind"
+              Value: "../../../Replay_SEQ/Replay"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -261,7 +261,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind/STS"
+              Value: "../../../Replay_SEQ/Replay/STS"
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -286,7 +286,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind"
+              Value: "../../../Replay_SEQ/Replay"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -295,7 +295,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind/Step_Number"
+              Value: "../../../Replay_SEQ/Replay/Step_Number"
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -320,7 +320,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../Alias_SEQ/Rewind"
+              Value: "../../../Replay_SEQ/Replay"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -329,7 +329,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+              Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -380,14 +380,10 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+              Value: "{Session}/Replay_Time_Local"
           - Name: STS
             Type: BaseDataVariableType
             DataType: Int32
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
           - Name: Step_Number
             Type: BaseDataVariableType
             DataType: Int16
@@ -462,6 +458,10 @@ Children:
           - Name: Last_Pause_Reason
             Type: BaseDataVariableType
             DataType: Int16
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Enable"
       - Name: Rectangle_OOR
         Type: Rectangle
         Children:
@@ -515,7 +515,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "{Alias_SEQ}/Rewind"
+                        Value: "../../../../../../../../Replay_SEQ/Replay"
                     - Name: TrueValue
                       Type: BaseDataVariableType
                       DataType: BaseDataType
@@ -524,7 +524,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "{Alias_SEQ}/Rewind/Step_Number"
+                        Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                     - Name: FalseValue
                       Type: BaseDataVariableType
                       DataType: BaseDataType
@@ -609,6 +609,23 @@ Children:
             - Name: Severity
               Type: PropertyType
               DataType: UInt16
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Replay_SEQ/Replay@Value"
       - Name: StepDescriptionComboBox
         Type: ComboBox
         Children:
@@ -5563,7 +5580,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind"
+              Value: "../../../Replay_SEQ/Replay"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -5572,7 +5589,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind/STS"
+              Value: "../../../Replay_SEQ/Replay/STS"
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -5597,7 +5614,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind"
+              Value: "../../../Replay_SEQ/Replay"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -5606,7 +5623,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind/Step_Number"
+              Value: "../../../Replay_SEQ/Replay/Step_Number"
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -5631,7 +5648,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../Alias_SEQ/Rewind"
+              Value: "../../../Replay_SEQ/Replay"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -5640,7 +5657,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+              Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
           - Name: FalseValue
             Type: BaseDataVariableType
             DataType: Int16
@@ -5691,14 +5708,10 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+              Value: "{Session}/Replay_Time_Local"
           - Name: STS
             Type: BaseDataVariableType
             DataType: Int32
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
           - Name: Step_Number
             Type: BaseDataVariableType
             DataType: Int16
@@ -5773,6 +5786,10 @@ Children:
           - Name: Last_Pause_Reason
             Type: BaseDataVariableType
             DataType: Int16
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Enable"
       - Name: Rectangle_OOR
         Type: Rectangle
         Children:
@@ -5826,7 +5843,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "{Alias_SEQ}/Rewind"
+                        Value: "../../../../../../../../Replay_SEQ/Replay"
                     - Name: TrueValue
                       Type: BaseDataVariableType
                       DataType: BaseDataType
@@ -5835,7 +5852,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "{Alias_SEQ}/Rewind/Step_Number"
+                        Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                     - Name: FalseValue
                       Type: BaseDataVariableType
                       DataType: BaseDataType
@@ -5920,6 +5937,23 @@ Children:
             - Name: Severity
               Type: PropertyType
               DataType: UInt16
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Replay_SEQ/Replay@Value"
       - Name: StepDescriptionComboBox
         Type: ComboBox
         Children:
@@ -26053,6 +26087,11 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
@@ -26583,147 +26622,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
-    - Name: Replay_enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Enable"
-    - Name: TextBox1
-      Type: TextBox
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Value"
-    - Name: DateAndTime1
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Time"
-    - Name: DateAndTime2
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Replay_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_ALZ/Replay/Time@NodeId"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: DateTime
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_Time"
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: ALZ_Display_Test2
     Type: ALZ_Display
     Children:
@@ -26764,6 +26662,11 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
@@ -27294,147 +27197,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
-    - Name: Replay_enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Enable"
-    - Name: TextBox1
-      Type: TextBox
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Value"
-    - Name: DateAndTime1
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Time"
-    - Name: DateAndTime2
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Replay_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_ALZ/Replay/Time@NodeId"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: DateTime
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_Time"
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: ALZ_Display_Test3
     Type: ALZ_Display
     Children:
@@ -27475,6 +27237,11 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
@@ -28005,147 +27772,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
-    - Name: Replay_enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Enable"
-    - Name: TextBox1
-      Type: TextBox
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Value"
-    - Name: DateAndTime1
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Time"
-    - Name: DateAndTime2
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Replay_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_ALZ/Replay/Time@NodeId"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: DateTime
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_Time"
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: V2105
     Type: VLV_Display_H
     Children:
@@ -28368,17 +27994,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -28483,7 +28109,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -28595,7 +28221,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -29546,17 +29172,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -29677,7 +29303,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Button
       Type: Button
       Children:
@@ -29773,7 +29399,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Tagname
       Type: Label
       Children:
@@ -30692,17 +30318,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -30807,7 +30433,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -30919,7 +30545,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -31870,17 +31496,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -31985,7 +31611,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -32097,7 +31723,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -33048,17 +32674,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -33163,7 +32789,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -33275,7 +32901,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -34226,17 +33852,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -34341,7 +33967,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -34453,7 +34079,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -35404,17 +35030,138 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
+    - Name: Replay_Button
+      Type: Button
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Color_Replay"
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Pop_Center}@NodeId"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ChangePanel"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: NewPanel
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/VLV/VLV_POP"
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                ValueRank: ScalarOrOneDimension
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_VLV}@NodeId"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Visible"
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Button
       Type: Button
       Children:
@@ -35510,7 +35257,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Rectangle1
       Type: Rectangle
     - Name: Tagname
@@ -36935,127 +36682,6 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Colors/States/Replay"
-    - Name: Replay_Button
-      Type: Button
-      Children:
-      - Name: BackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Color_Replay"
-      - Name: MouseClickEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Pop_Center}@NodeId"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "ChangePanel"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: NewPanel
-                Type: BaseDataVariableType
-                DataType: NodeId
-                Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/VLV/VLV_POP"
-              - Name: AliasNode
-                Type: BaseDataVariableType
-                DataType: NodeId
-                ValueRank: ScalarOrOneDimension
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_VLV}@NodeId"
-        - Name: EventArguments
-          Type: MouseClickEvent
-          Children:
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
-      - Name: Opacity
-        Type: BaseVariableType
-        DataType: Float
-        Children:
-        - Name: ConditionalConverter1
-          Type: ConditionalConverter
-          Children:
-          - Name: Condition
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../Visible"
-      - Name: Enabled
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-      - Name: Visible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-        Children:
-        - Name: ExpressionEvaluator1
-          Type: ExpressionEvaluator
-          Children:
-          - Name: Source0
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
     - Name: Left_Common
       Type: BaseDataVariableType
       DataType: Boolean
@@ -37164,7 +36790,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind"
+            Value: "../../../Replay_SEQ/Replay"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -37173,7 +36799,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind/STS"
+            Value: "../../../Replay_SEQ/Replay/STS"
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -37198,7 +36824,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind"
+            Value: "../../../Replay_SEQ/Replay"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -37207,7 +36833,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind/Step_Number"
+            Value: "../../../Replay_SEQ/Replay/Step_Number"
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -37232,7 +36858,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../Alias_SEQ/Rewind"
+            Value: "../../../Replay_SEQ/Replay"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -37241,7 +36867,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+            Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -37292,14 +36918,10 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Step_Number
           Type: BaseDataVariableType
           DataType: Int16
@@ -37374,6 +36996,10 @@ Children:
         - Name: Last_Pause_Reason
           Type: BaseDataVariableType
           DataType: Int16
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Rectangle_OOR
       Type: Rectangle
       Children:
@@ -37427,7 +37053,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "{Alias_SEQ}/Rewind"
+                      Value: "../../../../../../../../Replay_SEQ/Replay"
                   - Name: TrueValue
                     Type: BaseDataVariableType
                     DataType: BaseDataType
@@ -37436,7 +37062,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "{Alias_SEQ}/Rewind/Step_Number"
+                      Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                   - Name: FalseValue
                     Type: BaseDataVariableType
                     DataType: BaseDataType
@@ -37521,6 +37147,23 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Replay_SEQ/Replay@Value"
     - Name: StepDescriptionComboBox
       Type: ComboBox
       Children:
@@ -44115,6 +43758,11 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
@@ -44645,147 +44293,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
-    - Name: Replay_enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Enable"
-    - Name: TextBox1
-      Type: TextBox
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Value"
-    - Name: DateAndTime1
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Time"
-    - Name: DateAndTime2
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Replay_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_ALZ/Replay/Time@NodeId"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: DateTime
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_Time"
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: ALZ_Display_Test2
     Type: ALZ_Display
     Children:
@@ -44826,6 +44333,11 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
@@ -45356,147 +44868,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
-    - Name: Replay_enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Enable"
-    - Name: TextBox1
-      Type: TextBox
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Value"
-    - Name: DateAndTime1
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Time"
-    - Name: DateAndTime2
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Replay_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_ALZ/Replay/Time@NodeId"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: DateTime
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_Time"
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: ALZ_Display_Test3
     Type: ALZ_Display
     Children:
@@ -45537,6 +44908,11 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
@@ -46067,147 +45443,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
-    - Name: Replay_enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Enable"
-    - Name: TextBox1
-      Type: TextBox
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Value"
-    - Name: DateAndTime1
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Replay_ALZ/Replay/Time"
-    - Name: DateAndTime2
-      Type: DateTimePicker
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Replay_Time_Local"
-    - Name: Replay_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Replay_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_ALZ/Replay/Time@NodeId"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: DateTime
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Replay_Time"
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: V2105
     Type: VLV_Display_H
     Children:
@@ -46430,17 +45665,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -46545,7 +45780,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -46657,7 +45892,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -47608,17 +46843,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -47739,7 +46974,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Button
       Type: Button
       Children:
@@ -47835,7 +47070,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Tagname
       Type: Label
       Children:
@@ -48754,17 +47989,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -48869,7 +48104,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -48981,7 +48216,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -49932,17 +49167,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -50047,7 +49282,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -50159,7 +49394,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -51110,17 +50345,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -51225,7 +50460,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -51337,7 +50572,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -52288,17 +51523,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -52403,7 +51638,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -52515,7 +51750,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -53466,17 +52701,138 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
+    - Name: Replay_Button
+      Type: Button
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Color_Replay"
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Pop_Center}@NodeId"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ChangePanel"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: NewPanel
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/VLV/VLV_POP"
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                ValueRank: ScalarOrOneDimension
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_VLV}@NodeId"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Visible"
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Button
       Type: Button
       Children:
@@ -53572,7 +52928,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Rectangle1
       Type: Rectangle
     - Name: Tagname
@@ -54997,127 +54353,6 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Colors/States/Replay"
-    - Name: Replay_Button
-      Type: Button
-      Children:
-      - Name: BackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Color_Replay"
-      - Name: MouseClickEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Pop_Center}@NodeId"
-            - Name: Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "ChangePanel"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: NewPanel
-                Type: BaseDataVariableType
-                DataType: NodeId
-                Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/VLV/VLV_POP"
-              - Name: AliasNode
-                Type: BaseDataVariableType
-                DataType: NodeId
-                ValueRank: ScalarOrOneDimension
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_VLV}@NodeId"
-        - Name: EventArguments
-          Type: MouseClickEvent
-          Children:
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
-      - Name: Opacity
-        Type: BaseVariableType
-        DataType: Float
-        Children:
-        - Name: ConditionalConverter1
-          Type: ConditionalConverter
-          Children:
-          - Name: Condition
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../Visible"
-      - Name: Enabled
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-      - Name: Visible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-        Children:
-        - Name: ExpressionEvaluator1
-          Type: ExpressionEvaluator
-          Children:
-          - Name: Source0
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
     - Name: Left_Common
       Type: BaseDataVariableType
       DataType: Boolean
@@ -55226,7 +54461,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind"
+            Value: "../../../Replay_SEQ/Replay"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -55235,7 +54470,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind/STS"
+            Value: "../../../Replay_SEQ/Replay/STS"
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -55260,7 +54495,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind"
+            Value: "../../../Replay_SEQ/Replay"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -55269,7 +54504,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind/Step_Number"
+            Value: "../../../Replay_SEQ/Replay/Step_Number"
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -55294,7 +54529,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../Alias_SEQ/Rewind"
+            Value: "../../../Replay_SEQ/Replay"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -55303,7 +54538,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_SEQ}/Rewind/Last_Pause_Reason"
+            Value: "../../../Replay_SEQ/Replay/Last_Pause_Reason"
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Int16
@@ -55354,14 +54589,10 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Step_Number
           Type: BaseDataVariableType
           DataType: Int16
@@ -55436,6 +54667,10 @@ Children:
         - Name: Last_Pause_Reason
           Type: BaseDataVariableType
           DataType: Int16
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Rectangle_OOR
       Type: Rectangle
       Children:
@@ -55489,7 +54724,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "{Alias_SEQ}/Rewind"
+                      Value: "../../../../../../../../Replay_SEQ/Replay"
                   - Name: TrueValue
                     Type: BaseDataVariableType
                     DataType: BaseDataType
@@ -55498,7 +54733,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "{Alias_SEQ}/Rewind/Step_Number"
+                      Value: "../../../../../../../../Replay_SEQ/Replay/Step_Number"
                   - Name: FalseValue
                     Type: BaseDataVariableType
                     DataType: BaseDataType
@@ -55583,6 +54818,23 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Replay_SEQ/Replay@Value"
     - Name: StepDescriptionComboBox
       Type: ComboBox
       Children:
@@ -62462,7 +61714,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
@@ -62475,7 +61727,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
+          Value: "{Session}/Replay_Enable"
     - Name: Rectangle_L
       Type: Rectangle
       Children:
@@ -62681,7 +61933,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_LVL}/Rewind@Value"
+              Value: "../../../../Replay_LVL/Replay"
     - Name: Tagname
       Type: Label
       Children:
@@ -63209,17 +62461,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -63324,7 +62576,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -63436,7 +62688,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -64392,17 +63644,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -64507,7 +63759,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -64619,7 +63871,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -65584,17 +64836,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -65699,7 +64951,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: Opacity
         Type: BaseVariableType
         DataType: Float
@@ -65811,7 +65063,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -66776,17 +66028,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Speed_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -66819,7 +66071,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_MTR}/Rewind@Value"
+              Value: "../../../../Replay_MTR/Replay@Value"
     - Name: Button
       Type: Button
       Children:
@@ -66915,7 +66167,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_MTR}/Rewind@Value"
+              Value: "../../../../Replay_MTR/Replay@Value"
     - Name: Tagname
       Type: Label
       Children:
@@ -67638,17 +66890,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -67769,7 +67021,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Button
       Type: Button
       Children:
@@ -67865,7 +67117,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Tagname
       Type: Label
       Children:
@@ -68784,17 +68036,17 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Time_Local"
+            Value: "{Session}/Replay_Time_Local"
         - Name: STS
           Type: BaseDataVariableType
           DataType: Int32
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_Replay/UI/NativePresentationEngine/Session/Replay_Enable"
         - Name: Position_Actual
           Type: BaseDataVariableType
           DataType: Float
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Enable"
     - Name: Replay_Button
       Type: Button
       Children:
@@ -68915,7 +68167,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Button
       Type: Button
       Children:
@@ -69011,7 +68263,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Alias_VLV}/Rewind@Value"
+              Value: "../../../../Replay_VLV/Replay@Value"
     - Name: Tagname
       Type: Label
       Children:

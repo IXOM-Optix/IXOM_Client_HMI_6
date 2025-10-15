@@ -1,5 +1,6 @@
 #region Using directives
 using System;
+using System.Threading;
 using UAManagedCore;
 using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.UI;
@@ -20,7 +21,6 @@ using FTOptix.System;
 using FTOptix.Retentivity;
 using FTOptix.CoreBase;
 using FTOptix.CommunicationDriver;
-using FTOptix.UI;
 using FTOptix.OPCUAClient;
 using FTOptix.Core;
 #endregion
@@ -37,8 +37,13 @@ public class Replay_ALZ : BaseNetLogic
 
 
     public override void Start()
-    {
+  {
+        // Add 100ms delay before any other code is executed
+        //had to add to give time for variables to initialize
+        Thread.Sleep(100);
+        
         // Insert code to be executed when the user-defined logic is started
+        
         _PLC = LogicObject.GetVariable("PLC");
         _Area = LogicObject.GetVariable("Area");
         _Device_Name = LogicObject.GetVariable("Device_Name");
@@ -85,6 +90,8 @@ public class Replay_ALZ : BaseNetLogic
         myStore.Query(queryString, out _, out resultSet);
      //Store STS from Query
       _STS.Value = (dynamic)resultSet[0, 0];
+    
+        
     
     }
 
