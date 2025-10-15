@@ -668,7 +668,7 @@ Children:
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"e0583e9e62ea44a057ae31967ebbc248","Namespace":40}
+    Value: "/Objects/IXOM_Client_HMI_6/Security/Users/oper"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -854,6 +854,7 @@ Children:
     DataType: Boolean
     AccessLevel: Read
   - Name: Replay_Enable
+    Id: g=0f503fe893f63f57bfe9b58d37577ed3
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: Replay_Time_UTC
@@ -1603,7 +1604,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
+        Value: "{Session}/Replay_Enable"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1618,7 +1619,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
+        Value: "{Session}/Replay_Enable"
         Children:
         - Name: Mode
           Type: BaseVariableType

@@ -2017,6 +2017,159 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Alias_SEQ}/Last_Pause_Reason"
+  - Name: Replay_SEQ
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Step_Number
+        Type: BaseDataVariableType
+        DataType: Int16
+      - Name: Step_Time_Elapsed
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Elapsed_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Step_Time_Remaining
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Remaining_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Test_1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_3
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Last_Pause_Reason
+        Type: BaseDataVariableType
+        DataType: Int16
   - Name: Rectangle_OOR
     Type: Rectangle
     Children:
@@ -5342,6 +5495,159 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Alias_SEQ}/Last_Pause_Reason"
+  - Name: Replay_SEQ
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Step_Number
+        Type: BaseDataVariableType
+        DataType: Int16
+      - Name: Step_Time_Elapsed
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Elapsed_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Step_Time_Remaining
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Remaining_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Test_1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_3
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Last_Pause_Reason
+        Type: BaseDataVariableType
+        DataType: Int16
   - Name: Rectangle_OOR
     Type: Rectangle
     Children:
@@ -10048,6 +10354,159 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Alias_SEQ}/Last_Pause_Reason"
+  - Name: Replay_SEQ
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Step_Number
+        Type: BaseDataVariableType
+        DataType: Int16
+      - Name: Step_Time_Elapsed
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Elapsed_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Step_Time_Remaining
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Remaining_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Test_1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_3
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Last_Pause_Reason
+        Type: BaseDataVariableType
+        DataType: Int16
   - Name: CommFail
     Type: PolyLine
     Children:
@@ -11308,6 +11767,159 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Alias_SEQ}/Last_Pause_Reason"
+  - Name: Replay_SEQ
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Step_Number
+        Type: BaseDataVariableType
+        DataType: Int16
+      - Name: Step_Time_Elapsed
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Elapsed_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Step_Time_Remaining
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Step_Time_Remaining_Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Test_1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Test_3
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Compare
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Setpoint
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: Units
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+      - Name: Last_Pause_Reason
+        Type: BaseDataVariableType
+        DataType: Int16
   - Name: Rectangle_OOR
     Type: Rectangle
     Children:

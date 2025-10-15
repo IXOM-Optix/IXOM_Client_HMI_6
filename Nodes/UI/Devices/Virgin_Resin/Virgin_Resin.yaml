@@ -603,7 +603,7 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../Data_Decimal_Places"
-      - Name: Label3
+      - Name: Label_Value
         Type: Label
         Children:
         - Name: Text
@@ -630,7 +630,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "../../../../../../Value@Value"
+                    Value: "../../../../../../Alias_Calc_Value/Value@Value"
                 - Name: Slope
                   Type: BaseDataVariableType
                   DataType: Double
@@ -667,7 +667,7 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../Read_Only"
-      - Name: Units
+      - Name: Label_Units
         Type: Label
         Children:
         - Name: Text

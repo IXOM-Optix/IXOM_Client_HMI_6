@@ -413,7 +413,7 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 2
-  - Name: Label3
+  - Name: Label_Value
     Type: Label
     Children:
     - Name: Text
@@ -446,7 +446,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../../../../Value@Value"
+                Value: "../../../../../../Alias_Calc_Value/Value@Value"
             - Name: Slope
               Type: BaseDataVariableType
               DataType: Double
@@ -557,7 +557,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
-  - Name: Units
+  - Name: Label_Units
     Type: Label
     Children:
     - Name: Text
@@ -1331,7 +1331,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_Calc_Value}/Value@Value"
+                Value: "../../../../../../Alias_Calc_Value/Value@Value"
             - Name: Slope
               Type: BaseDataVariableType
               DataType: Double

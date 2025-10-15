@@ -10,7 +10,6 @@ Children:
   Type: BaseObjectType
   Children:
   - Name: Enable
-    Id: g=e2cd21faabc83aa6edc2b68a34d8f2bc
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: UTC_DateTime

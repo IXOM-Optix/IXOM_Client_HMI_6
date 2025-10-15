@@ -1402,7 +1402,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -1411,7 +1411,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/STS"
+          Value: "../../../Replay_MTR/Replay/STS"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -1442,7 +1442,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -1451,7 +1451,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/Speed_Actual"
+          Value: "../../../Replay_MTR/Replay/Speed_Actual"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -1461,6 +1461,88 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../Alias_MTR/Speed_Actual"
+  - Name: Replay_MTR
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Speed_Actual
+        Type: BaseDataVariableType
+        DataType: Float
   - Name: Replay_Button
     Type: Button
     Children:
@@ -2700,7 +2782,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -2709,7 +2791,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/STS"
+          Value: "../../../Replay_MTR/Replay/STS"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -2740,7 +2822,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -2749,7 +2831,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/Speed_Actual"
+          Value: "../../../Replay_MTR/Replay/Speed_Actual"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -2759,6 +2841,88 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../Alias_MTR/Speed_Actual"
+  - Name: Replay_MTR
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Speed_Actual
+        Type: BaseDataVariableType
+        DataType: Float
   - Name: Replay_Button
     Type: Button
     Children:
@@ -4381,7 +4545,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -4390,7 +4554,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/STS"
+          Value: "../../../Replay_MTR/Replay/STS"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -4421,7 +4585,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -4430,7 +4594,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/Speed_Actual"
+          Value: "../../../Replay_MTR/Replay/Speed_Actual"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -4440,6 +4604,88 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../Alias_MTR/Speed_Actual"
+  - Name: Replay_MTR
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Speed_Actual
+        Type: BaseDataVariableType
+        DataType: Float
   - Name: Replay_Button
     Type: Button
     Children:
@@ -5921,7 +6167,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -5930,7 +6176,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/STS"
+          Value: "../../../Replay_MTR/Replay/STS"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -5961,7 +6207,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind"
+          Value: "../../../Replay_MTR/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -5970,7 +6216,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_MTR/Rewind/Speed_Actual"
+          Value: "../../../Replay_MTR/Replay/Speed_Actual"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -5980,6 +6226,88 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../Alias_MTR/Speed_Actual"
+  - Name: Replay_MTR
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "../../PLC"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/UI/NativePresentationEngine/Session/Replay_Enable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+      - Name: Speed_Actual
+        Type: BaseDataVariableType
+        DataType: Float
   - Name: Replay_Button
     Type: Button
     Children:

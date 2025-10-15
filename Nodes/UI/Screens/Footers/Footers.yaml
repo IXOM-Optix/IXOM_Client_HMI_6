@@ -3744,10 +3744,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
-    - Name: System
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Main_Magna_Pak"
   - Name: Button_OV2
     Type: Button
     Children:
