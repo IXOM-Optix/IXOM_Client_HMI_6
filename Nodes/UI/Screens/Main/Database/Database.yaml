@@ -1831,6 +1831,15 @@ Children:
         DataType: LocalizedText
         ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"Checkout"}
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Roles/Valid_License"
     - Name: GenericTableExporter
       Type: NetLogic
       WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -1867,7 +1876,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Table@Pointer"
+          Value: "../../Table"
       - Name: Query
         Type: BaseDataVariableType
         DataType: String
@@ -1940,7 +1949,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../Table@BrowseName"
+            Value: "/Objects/IXOM_Client_HMI_6/DataStores/EmbeddedDatabase1/Tables/ShoppingCart@BrowseName"
             Children:
             - Name: Mode
               Type: BaseVariableType

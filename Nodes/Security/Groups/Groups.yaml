@@ -15,6 +15,9 @@ Children:
   - Class: Reference
     Type: HasRole
     Target: g=aee1a1c88189e8ca7c01be1cd256adf8
+  - Class: Reference
+    Type: HasRole
+    Target: g=4e11ba5edc5f8614130e2bbb1480cfc3
 - Name: Supervisors
   Id: g=f4277f85639ddc01ab8f306487d95fba
   Type: GroupType

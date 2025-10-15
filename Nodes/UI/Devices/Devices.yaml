@@ -37863,5 +37863,5 @@ Children:
 - File: Keyboards/Keyboards.yaml
 - File: Email/Email.yaml
 - File: Maintenance/Maintenance.yaml
-- File: TableExporter/TableExporter.yaml
 - File: Virgin_Resin/Virgin_Resin.yaml
+- File: Table_Controls/Table_Controls.yaml
