@@ -53,7 +53,7 @@ public class LOG_Manual : BaseNetLogic
                 var Log_Description_Line_3 = LogicObject.GetVariable("Values/Description_Line_3");
 
                 */
-        
+
         var Log_Make = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/Make");
         var Log_Model = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/Model");
         var Log_PartNumber = Project.Current.GetVariable("Loggers/ShoppingCart/VariablesToLog/PartNumber");
@@ -134,10 +134,10 @@ public class LOG_Manual : BaseNetLogic
         {
             Log.Warning("Cannot move _Status value - source or target IUAVariable not found");
         }
-      
 
-        // Wait 5 seconds
-        System.Threading.Thread.Sleep(5000);
+
+        // Wait 1 seconds
+        System.Threading.Thread.Sleep(1000);
 
         // Call DataLogger Log method
         try
@@ -160,24 +160,151 @@ public class LOG_Manual : BaseNetLogic
         }
 
     }
-
-/*
-    IUAVariable _Make;
-    IUAVariable _Model;
-    IUAVariable _PartNumber;
-    IUAVariable _Description_Line_1;
-    IUAVariable _Description_Line_2;
-    IUAVariable _Description_Line_3;
+    
 
 
 
-    IUAVariable Log_Make;
-    IUAVariable Log_Model;
-    IUAVariable Log_PartNumber;
-    IUAVariable Log_Description_Line_1;
-    IUAVariable Log_Description_Line_2;
-    IUAVariable Log_Description_Line_3;
 
-    */
+
+
+
+
+
+
+
+
+
+[ExportMethod]
+    public void LOG_Maintenance(
+        string Operator,
+        string Device_Name,
+        string Action,
+        string Notes,
+        string Hours,
+        string Quantity,
+        string Total
+        )
+    {
+
+
+
+        
+        var Log_Operator = Project.Current.GetVariable("Loggers/Maintenance_Log/VariablesToLog/Operator");
+        var Log_Device_Name = Project.Current.GetVariable("Loggers/Maintenance_Log/VariablesToLog/Device_Name");
+        var Log_Action = Project.Current.GetVariable("Loggers/Maintenance_Log/VariablesToLog/Action");
+        var Log_Notes = Project.Current.GetVariable("Loggers/Maintenance_Log/VariablesToLog/Notes");
+        var Log_Hours = Project.Current.GetVariable("Loggers/Maintenance_Log/VariablesToLog/Hours");
+        var Log_Quantity = Project.Current.GetVariable("Loggers/Maintenance_Log/VariablesToLog/Quantity");
+        var Log_Total = Project.Current.GetVariable("Loggers/Maintenance_Log/VariablesToLog/Total");
+
+        // Move values using .Value command
+        if (Operator != null && Log_Operator != null)
+        {
+            Log_Operator.Value = Operator;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Operator value - source or target IUAVariable not found");
+        }
+
+        if (Device_Name != null && Log_Device_Name != null)
+        {
+            Log_Device_Name.Value = Device_Name;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Device_Name value - source or target IUAVariable not found");
+        }
+
+        if (Action != null && Log_Action != null)
+        {
+            Log_Action.Value = Action;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Action value - source or target IUAVariable not found");
+        }
+
+        if (Notes != null && Log_Notes != null)
+        {
+            Log_Notes.Value = Notes;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Notes value - source or target IUAVariable not found");
+        }
+
+        if (Hours != null && Log_Hours != null)
+        {
+            Log_Hours.Value = Hours;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Hours value - source or target IUAVariable not found");
+        }
+
+        if (Quantity != null && Log_Quantity != null)
+        {
+            Log_Quantity.Value = Quantity;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Quantity value - source or target IUAVariable not found");
+        }
+
+        if (Total != null && Log_Total != null)
+        {
+            Log_Total.Value = Total;
+        }
+        else
+        {
+            Log.Warning("Cannot move _Total value - source or target IUAVariable not found");
+        }
+      
+
+        // Wait 1 seconds
+        System.Threading.Thread.Sleep(1000);
+
+        // Call DataLogger Log method
+        try
+        {
+            var dataLogger = Project.Current.Get<FTOptix.DataLogger.DataLogger>("Loggers/Maintenance_Log");
+            if (dataLogger != null)
+            {
+                // Call the Log method
+                dataLogger.Log();
+                Log.Info("Successfully called DataLogger Log method");
+            }
+            else
+            {
+                Log.Warning("DataLogger not found at Loggers/Maintenance_Log");
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Error($"Error calling DataLogger Log method: {ex.Message}");
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 

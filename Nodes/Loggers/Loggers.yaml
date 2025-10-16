@@ -863,7 +863,8 @@ Children:
         AccessLevel: Read
     - Name: Hours
       Type: VariableToLog
-      DataType: Duration
+      DataType: String
+      Value: "0"
       Children:
       - Name: LastValue
         Type: PropertyType
