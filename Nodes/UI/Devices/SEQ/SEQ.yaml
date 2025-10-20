@@ -29,111 +29,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-  - Name: Rewind
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Children:
-    - Name: Date_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/UTC_DateTime"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: STS
-      Type: BaseDataVariableType
-      DataType: Int16
-    - Name: Step_Number
-      Type: BaseDataVariableType
-      DataType: Int16
-    - Name: Step_Time_Elapsed
-      Type: BaseDataVariableType
-      DataType: Float
-    - Name: Step_Time_Elapsed_Units
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "0"
-    - Name: Step_Time_Remaining
-      Type: BaseDataVariableType
-      DataType: Float
-    - Name: Step_Time_Remaining_Units
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "0"
-    - Name: Test_1
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Compare
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-      - Name: Setpoint
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Units
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-    - Name: Test_2
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Compare
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-      - Name: Setpoint
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Units
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-    - Name: Test_3
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Compare
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-      - Name: Setpoint
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Units
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-    - Name: Last_Pause_Reason
-      Type: BaseDataVariableType
-      DataType: Int16
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        ModellingRule: Optional
-        Value: 2
   - Name: STS
     Type: BaseDataVariableType
     DataType: Int16
@@ -310,99 +205,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "0"
-    - Name: Rewind
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: Date_Time
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink1
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/UTC_DateTime"
-      - Name: STS
-        Type: BaseDataVariableType
-        DataType: Int16
-      - Name: Step_Number
-        Type: BaseDataVariableType
-        DataType: Int16
-      - Name: Step_Time_Elapsed
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Step_Time_Elapsed_Units
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-      - Name: Step_Time_Remaining
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: Step_Time_Remaining_Units
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "0"
-      - Name: Test_1
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Children:
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Float
-        - Name: Compare
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "0"
-        - Name: Setpoint
-          Type: BaseDataVariableType
-          DataType: Float
-        - Name: Units
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "0"
-      - Name: Test_2
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Children:
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Float
-        - Name: Compare
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "0"
-        - Name: Setpoint
-          Type: BaseDataVariableType
-          DataType: Float
-        - Name: Units
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "0"
-      - Name: Test_3
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Children:
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Float
-        - Name: Compare
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "0"
-        - Name: Setpoint
-          Type: BaseDataVariableType
-          DataType: Float
-        - Name: Units
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "0"
-      - Name: Last_Pause_Reason
-        Type: BaseDataVariableType
-        DataType: Int16
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
     - Name: STS
       Type: BaseDataVariableType
       DataType: Int16
@@ -514,90 +316,6 @@ Children:
     - Name: Alarm_Word
       Type: BaseDataVariableType
       DataType: Int16
-    - Name: SEQ_Replay_Query
-      Type: NetLogic
-      Children:
-      - Class: Method
-        Name: SEQ_Query
-        Id: g=9aa8975f43a9c5aca8265c5d675bc755
-    - Name: RewindDate_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Rewind/Date_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ns=7;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../SEQ_Replay_Query@NodeId"
-                Children:
-                - Name: Mode
-                  Type: BaseVariableType
-                  DataType: DynamicLinkMode
-                  ModellingRule: Optional
-                  Value: 2
-            - Name: ns=7;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "SEQ_Query"
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: SEQ_Paused
     Type: DigitalAlarm_IXOM
     Children:
@@ -2432,25 +2150,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "!{0}"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: Tagname
     Type: Label
     Children:
@@ -3244,6 +2943,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Button/Enabled"
   - Name: Phase_Start_Text
     Type: Label
     Children:
@@ -3486,6 +3194,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Button/Enabled"
   - Name: Value_Text
     Type: Label
     Children:
@@ -4751,6 +4468,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Button/Enabled"
   - Name: Resume
     Type: Button
     Children:
@@ -4875,6 +4601,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Button/Enabled"
   - Name: CommFail
     Type: PolyLine
     Children:
@@ -5898,25 +5633,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "!{0}"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: StepDescriptionComboBox
     Type: ComboBox
     Children:
@@ -10115,6 +9831,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+  - Name: FontScaling
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
 - Name: SEQ_Display_Compact
   Id: g=3bf2ce168db52cad82e191c5d5607b7a
   Supertype: ScaleLayout
@@ -11047,25 +10768,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "!{0}"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: StepDescriptionComboBox
     Type: ComboBox
     Children:
@@ -12192,25 +11894,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "!{0}"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Replay_SEQ/Replay@Value"
   - Name: StepDescriptionComboBox
     Type: ComboBox
     Children:
@@ -12577,6 +12260,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 8.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Button/Enabled"
   - Name: Resume
     Type: Button
     Children:
@@ -12711,6 +12403,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Button/Enabled"
   - Name: CommFail
     Type: PolyLine
     Children:
@@ -12992,6 +12693,16 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+  - Name: FontScaling
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
 - Name: SEQ_POP
   Id: g=af7e22bba72970c890243a91e7a88a96
   Supertype: ScaleLayout

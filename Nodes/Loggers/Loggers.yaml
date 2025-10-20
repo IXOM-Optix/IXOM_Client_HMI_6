@@ -1172,6 +1172,7 @@ Children:
     - Name: Contactor
       Type: VariableToLog
       DataType: Int16
+      Value: 1
       Children:
       - Name: LastValue
         Type: PropertyType

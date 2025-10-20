@@ -21,7 +21,6 @@ using FTOptix.System;
 using FTOptix.Retentivity;
 using FTOptix.CoreBase;
 using FTOptix.CommunicationDriver;
-using FTOptix.UI;
 using FTOptix.OPCUAClient;
 using FTOptix.Core;
 #endregion
@@ -114,20 +113,20 @@ public class Replay_SEQ : BaseNetLogic
          //Query Data Base for TEST_1_Value
             queryString = $"SELECT TEST_1_Value FROM "+Device_Name+" WHERE LocalTimestamp <= '" + sqlFormattedDate + "'ORDER BY LocalTimestamp DESC LIMIT 2";
             myStore.Query(queryString, out _, out resultSet);
-            //Store Value from Query
-            _Test_1_Value.Value = (dynamic)resultSet[0, 0];
+        //Store Value from Query
+        _Test_1_Value.Value = (dynamic)resultSet[0, 0];
 
          //Query Data Base for TEST_2_Value
             queryString = $"SELECT TEST_2_Value FROM "+Device_Name+" WHERE LocalTimestamp <= '" + sqlFormattedDate + "'ORDER BY LocalTimestamp DESC LIMIT 2";
             myStore.Query(queryString, out _, out resultSet);
-            //Store Value from Query
-            _Test_2_Value.Value = (dynamic)resultSet[0, 0];
+        //Store Value from Query
+        _Test_2_Value.Value = (dynamic)resultSet[0, 0];
        
          //Query Data Base for TEST_3_Value
             queryString = $"SELECT TEST_3_Value FROM "+Device_Name+" WHERE LocalTimestamp <= '" + sqlFormattedDate + "'ORDER BY LocalTimestamp DESC LIMIT 2";
             myStore.Query(queryString, out _, out resultSet);
-            //Store Value from Query
-            _Test_3_Value.Value = (dynamic)resultSet[0, 0];
+        //Store Value from Query
+        _Test_3_Value.Value = (dynamic)resultSet[0, 0];
 
 
     //Change in Value

@@ -21,40 +21,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-  - Name: Rewind
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Children:
-    - Name: Date_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/UTC_DateTime"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: STS
-      Type: BaseDataVariableType
-      DataType: Int16
-    - Name: Value
-      Type: BaseDataVariableType
-      DataType: Float
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        ModellingRule: Optional
-        Value: 2
   - Name: STS
     Type: BaseDataVariableType
     DataType: Int16
@@ -240,28 +206,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "0"
-    - Name: Rewind
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: Date_Time
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink1
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/UTC_DateTime"
-      - Name: STS
-        Type: BaseDataVariableType
-        DataType: Int16
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
     - Name: STS
       Type: BaseDataVariableType
       DataType: Int16
@@ -357,90 +301,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "0"
-    - Name: ALZ_Replay_Query
-      Type: NetLogic
-      Children:
-      - Class: Method
-        Name: ALZ_Query
-        Id: g=754648ad307318a68feaa9e915667054
-    - Name: RewindDate_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Rewind/Date_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ns=7;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../ALZ_Replay_Query@NodeId"
-                Children:
-                - Name: Mode
-                  Type: BaseVariableType
-                  DataType: DynamicLinkMode
-                  ModellingRule: Optional
-                  Value: 2
-            - Name: ns=7;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "ALZ_Query"
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
     - Name: Part_Info
       Type: Alias
       DataType: NodeId
@@ -1443,6 +1303,7 @@ Children:
       Type: PropertyType
       DataType: Boolean
       ModellingRule: Optional
+      Value: true
     - Name: SamplingPeriod
       Type: PropertyType
       DataType: Duration
@@ -1534,6 +1395,7 @@ Children:
       Type: PropertyType
       DataType: Boolean
       ModellingRule: Optional
+      Value: true
     - Name: LogVariableOperationCode
       Type: PropertyType
       DataType: Boolean

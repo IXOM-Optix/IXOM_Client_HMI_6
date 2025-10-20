@@ -6,25 +6,6 @@ Children:
   Type: BaseDataVariableType
   DataType: String
   Value: "Newport_ME"
-- Name: Rewind
-  Type: BaseObjectType
-  Children:
-  - Name: Enable
-    Type: BaseDataVariableType
-    DataType: Boolean
-  - Name: UTC_DateTime
-    Type: BaseDataVariableType
-    DataType: DateTime
-  - Name: Local_DateTime
-    Type: BaseDataVariableType
-    DataType: DateTime
-  - Name: Local_DateTimeChanged
-    Type: VariableChangedEventDispatcher
-    Children:
-    - Name: VariableNodePath
-      Type: BaseVariableType
-      DataType: NodePath
-      Value: "../UTC_DateTime"
 - Name: Screen
   Type: BaseObjectType
   Children:

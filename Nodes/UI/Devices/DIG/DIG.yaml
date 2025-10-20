@@ -21,40 +21,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-  - Name: Rewind
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Children:
-    - Name: Date_Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/UTC_DateTime"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: STS
-      Type: BaseDataVariableType
-      DataType: Int16
-    - Name: Value
-      Type: BaseDataVariableType
-      DataType: Float
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        ModellingRule: Optional
-        Value: 2
   - Name: STS
     Type: BaseDataVariableType
     DataType: Int16
@@ -206,28 +172,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "0"
-    - Name: Rewind
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: Date_Time
-        Type: BaseDataVariableType
-        DataType: DateTime
-        Children:
-        - Name: DynamicLink1
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/UTC_DateTime"
-      - Name: STS
-        Type: BaseDataVariableType
-        DataType: Int16
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Float
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Model/Rewind/Enable"
     - Name: STS
       Type: BaseDataVariableType
       DataType: Int16
@@ -289,90 +233,6 @@ Children:
     - Name: Input_Hold_Delay
       Type: BaseDataVariableType
       DataType: Int32
-    - Name: DIG_Replay_Query
-      Type: NetLogic
-      Children:
-      - Class: Method
-        Name: DIG_Query
-        Id: g=65ba07fae18faa608d020c1fcac41a73
-    - Name: RewindDate_TimeChanged
-      Type: VariableChangedEventDispatcher
-      Children:
-      - Name: VariableNodePath
-        Type: BaseVariableType
-        DataType: NodePath
-        Value: "../Rewind/Date_Time"
-      - Name: VariableValueChangedEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ns=7;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../DIG_Replay_Query@NodeId"
-                Children:
-                - Name: Mode
-                  Type: BaseVariableType
-                  DataType: DynamicLinkMode
-                  ModellingRule: Optional
-                  Value: 2
-            - Name: ns=7;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "DIG_Query"
-        - Name: EventArguments
-          Type: VariableValueChangedEvent
-          Children:
-          - Name: VariableNodeId
-            Type: BaseVariableType
-            DataType: NodeId
-          - Name: NewValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: OldValue
-            Type: BaseVariableType
-            DataType: BaseDataType
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
     - Name: Part_Info
       Type: Alias
       DataType: NodeId
@@ -767,6 +627,79 @@ Children:
     Type: BaseDataVariableType
     DataType: FillModeEnum
     ModellingRule: Optional
+  - Name: Replay_DIG
+    Type: NetLogic
+    Children:
+    - Name: PLC
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../PLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Area
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Area"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Device_Name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Device_Name"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Replay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/Replay_Time_Local"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: STS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Replay_Enable"
   - Name: Rectangle_ON
     Type: Rectangle
     Children:
@@ -1170,7 +1103,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Alias_DIG}/Rewind@Value"
+            Value: "../../../../Replay_DIG/Replay"
   - Name: Tagname
     Type: Label
     Children:
@@ -1843,7 +1776,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_DIG/Rewind"
+          Value: "../../../Replay_DIG/Replay"
       - Name: ns=7;Source1
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -1852,7 +1785,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Alias_DIG/Rewind/STS"
+          Value: "../../../Replay_DIG/Replay/STS"
       - Name: ns=7;Source2
         Type: BaseDataVariableType
         DataType: BaseDataType
