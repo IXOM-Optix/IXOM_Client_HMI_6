@@ -701,7 +701,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Retention"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Retention"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -711,6 +711,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Enabled"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
     - Name: PollingTime
       Type: BaseDataVariableType
       DataType: Duration
@@ -719,7 +729,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Purge Interval"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Interval"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1054,7 +1064,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Retention"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Retention"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1064,6 +1074,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Enabled"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
     - Name: PollingTime
       Type: BaseDataVariableType
       DataType: Duration
@@ -1072,7 +1092,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Purge Interval"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Interval"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1410,7 +1430,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Retention"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Retention"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1420,6 +1440,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Enabled"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
     - Name: PollingTime
       Type: BaseDataVariableType
       DataType: Duration
@@ -1428,7 +1458,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Purge Interval"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Interval"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1750,7 +1780,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Retention"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Retention"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1760,6 +1790,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Enabled"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
     - Name: PollingTime
       Type: BaseDataVariableType
       DataType: Duration
@@ -1768,7 +1808,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Purge Interval"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Interval"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2103,7 +2143,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Retention"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Retention"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2113,6 +2153,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Enabled"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
     - Name: PollingTime
       Type: BaseDataVariableType
       DataType: Duration
@@ -2121,7 +2171,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../UI/Devices/Model/Data_Management/Purge Interval"
+        Value: "../../../../UI/Devices/Model/Data_Management/Purge_Interval"
         Children:
         - Name: Mode
           Type: BaseVariableType

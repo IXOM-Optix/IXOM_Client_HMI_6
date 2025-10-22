@@ -35,14 +35,18 @@ Children:
     Type: BaseDataVariableType
     DataType: Duration
     Value: "0:00:00:00.7500000"
-  - Name: Purge Interval
+  - Name: Purge_Interval
     Type: BaseDataVariableType
     DataType: Duration
     Value: "0:01:00:00.0000000"
-  - Name: Retention
+  - Name: Purge_Retention
     Type: BaseDataVariableType
     DataType: Duration
     Value: "14:14:00:00.0000000"
+  - Name: Purge_Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
 - Name: URL
   Id: g=32006eb207f1d5dfb337df383d62f426
   Type: BaseDataVariableType
