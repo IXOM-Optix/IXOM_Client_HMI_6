@@ -89816,10 +89816,45 @@ Children:
           Type: BaseDataVariableType
           DataType: Double
           Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../License_Valid"
+            - Name: Source1
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Regen_History_Alias}/Index"
+            - Name: Source2
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../MinValue"
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Regen_History_Alias}/Index"
+            Value: "../../License_Valid"
       - Name: Label3
         Type: Label
       - Name: Label16
@@ -92804,6 +92839,14 @@ Children:
         DataType: Boolean
         ModellingRule: Optional
         Value: true
+      - Name: License_Valid
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
     - Name: Box_Title
       Type: Rectangle
       Children:
@@ -93023,10 +93066,48 @@ Children:
           Type: BaseDataVariableType
           DataType: Double
           Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../License_Valid"
+            - Name: Source1
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Monthly_Report_Alias}/Index"
+            - Name: Source2
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../MinValue"
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Monthly_Report_Alias}/Index"
+            Value: "../../License_Valid"
+        - Name: MinValue
+          Type: BaseDataVariableType
+          DataType: Double
       - Name: Month
         Type: Label
         Children:
@@ -102249,6 +102330,14 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Monthly_Report_Alias}/Index"
+      - Name: License_Valid
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
     - Name: Box_Title
       Type: Rectangle
       Children:

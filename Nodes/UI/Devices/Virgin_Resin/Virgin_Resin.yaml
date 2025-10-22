@@ -1902,6 +1902,23 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: License_Valid
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../License_Valid"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment

@@ -11,6 +11,6 @@ Children:
 - Name: Basic_Control
   Id: g=aee1a1c88189e8ca7c01be1cd256adf8
   Type: ns=1;RoleType
-- Name: License_Key
+- Name: License_Valid
   Id: g=4e11ba5edc5f8614130e2bbb1480cfc3
   Type: ns=1;RoleType

@@ -335,3 +335,83 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "900 Liters Resin"
+- Name: License_Renewal
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Small Resin GOLD"
+  - Name: PartNumber
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEXGOLD-SR-900IBC"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/IBC.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MIEX Small Bead GOLD Resin"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1000 Liter IBC"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "900 Liters Resin"
+- Name: Dummy_Part
+  Id: g=1a12e576f1d2261458fcb9cb6e403369
+  Type: Dummy_Part_Info
+  Children:
+  - Name: Part_Info
+    Type: Part_Info
+    Children:
+    - Name: Make
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Generic"
+    - Name: Model
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Example"
+    - Name: PartNumber
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Turbo_45678"
+    - Name: Image_File
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/IXOM/Parts/IXOM/Dummy_Part.png"
+    - Name: PDF_File
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "0"
+    - Name: Website
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: Description_Line_1
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EXAMPLE - NOT Real Part"
+    - Name: Description_Line_2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EXAMPLE - NOT Real Part"
+    - Name: Description_Line_3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EXAMPLE - NOT Real Part"

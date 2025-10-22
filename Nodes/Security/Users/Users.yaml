@@ -180,3 +180,8 @@ Children:
   - Class: Reference
     Type: HasGroup
     Target: g=b93dceed3051bfed8e8b721c0a020a93
+  - Name: MeasurementSystem
+    Id: g=407adec120dd370e31a4c7647117e21a
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty

@@ -2824,16 +2824,66 @@ Children:
       Type: BaseDataVariableType
       DataType: Double
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Regen_History_Alias}/Index"
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
         Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "if({0},{1},{2})"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../License_Valid"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Mode
-          Type: BaseVariableType
+          Type: PropertyType
           DataType: DynamicLinkMode
+          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
+        - Name: ns=7;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Regen_History_Alias}/Index"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=7;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../MinValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -2857,7 +2907,7 @@ Children:
     - Name: MinValue
       Type: BaseDataVariableType
       DataType: Double
-      ModellingRule: Optional
+      Value: 1.0
     - Name: MaxValue
       Type: BaseDataVariableType
       DataType: Double
@@ -2877,6 +2927,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../License_Valid"
   - Name: Label3
     Type: Label
     Children:
@@ -6265,6 +6324,20 @@ Children:
     DataType: Boolean
     ModellingRule: Optional
     Value: true
+  - Name: License_Valid
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: RegenData_MagnaPak_Window
   Id: g=b58bb5c9547863e6ed1b880c7d270f90
   Supertype: ScaleLayout
@@ -6574,16 +6647,66 @@ Children:
       Type: BaseDataVariableType
       DataType: Double
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Alias_RegenData}/Index"
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
         Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "if({0},{1},{2})"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../License_Valid"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Mode
-          Type: BaseVariableType
+          Type: PropertyType
           DataType: DynamicLinkMode
+          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
+        - Name: ns=7;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Alias_RegenData}/Index"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=7;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../MinValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -6607,7 +6730,6 @@ Children:
     - Name: MinValue
       Type: BaseDataVariableType
       DataType: Double
-      ModellingRule: Optional
       Value: 1.0
     - Name: MaxValue
       Type: BaseDataVariableType
@@ -6628,6 +6750,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../License_Valid"
   - Name: Label4
     Type: Label
     Children:
@@ -6836,6 +6967,20 @@ Children:
   - Name: Default_Tab_Index
     Type: BaseDataVariableType
     DataType: Int16
+  - Name: License_Valid
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: RegenData_MagnaPak_Info_Tab
   Id: g=fbc3ea045452099674cf814849ce2ff8
   Supertype: Panel
@@ -20872,16 +21017,66 @@ Children:
       Type: BaseDataVariableType
       DataType: Double
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Monthly_Report_Alias}/Index"
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
         Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "if({0},{1},{2})"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../License_Valid"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Mode
-          Type: BaseVariableType
+          Type: PropertyType
           DataType: DynamicLinkMode
+          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
+        - Name: ns=7;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Monthly_Report_Alias}/Index"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=7;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../MinValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -20905,7 +21100,6 @@ Children:
     - Name: MinValue
       Type: BaseDataVariableType
       DataType: Double
-      ModellingRule: Optional
     - Name: MaxValue
       Type: BaseDataVariableType
       DataType: Double
@@ -20925,6 +21119,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../License_Valid"
   - Name: Month
     Type: Label
     Children:
@@ -33699,6 +33902,20 @@ Children:
       DataType: Boolean
       ModellingRule: Optional
       Value: true
+  - Name: License_Valid
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: Data_DB_MagnaPak
   Id: g=0e4c1cde60215770803259b4a8e002bf
   Supertype: BaseObjectType

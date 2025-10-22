@@ -480,6 +480,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../License_Valid"
   - Name: Button2
     Type: Button
     Children:
@@ -1352,6 +1361,15 @@ Children:
       Type: BaseVariableType
       DataType: VerticalAlignment
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../License_Valid"
   - Name: ScaleLayout2
     Type: Panel
     Children:
@@ -1517,6 +1535,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../License_Valid"
   - Name: ScaleLayout3
     Type: Panel
     Children:
@@ -1632,7 +1659,7 @@ Children:
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
-          - Name: MethodContainer1
+          - Name: MethodContainer2
             Type: BaseObjectType
             Children:
             - Name: ns=7;ObjectPointer
@@ -1646,7 +1673,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Main}@NodeId"
+                Value: "{Pop_FullScreen}@NodeId"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -1663,10 +1690,12 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/IXOM_Client_HMI_6/UI/Screens/Main/Database/Maintenance"
+                Description: {"NamespaceIndex":9,"TextId":"ChangePanelNewPanelDescription"}
+                Value: "/Objects/IXOM_Client_HMI_6/Security/License_Keys"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
+                Description: {"NamespaceIndex":9,"TextId":"ChangePanelAliasNodeDescription"}
                 ValueRank: ScalarOrOneDimension
         - Name: EventArguments
           Type: MouseDownEvent
@@ -1735,6 +1764,20 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
+  - Name: License_Valid
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: Header_Rewind
   Id: g=e561910f7543dece95c60f5b8da14f34
   Supertype: ScaleLayout
