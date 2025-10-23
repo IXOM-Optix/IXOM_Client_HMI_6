@@ -2242,7 +2242,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"License Not Valid!\nRenew License to\nEnable Feature"}
+        Value: {"LocaleId":"en-US","Text":"License Expired!\nContact Ixom to\nRenew License"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -2306,24 +2306,29 @@ Children:
         DataType: Boolean
         Value: true
         Children:
-        - Name: ExpressionEvaluator1
-          Type: ExpressionEvaluator
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
           Children:
-          - Name: Expression
+          - Name: Condition
             Type: BaseDataVariableType
-            DataType: String
-            ReferenceType: HasParameter
-            ModellingRule: Optional
-            Value: "if({0},False,True)"
-          - Name: ns=7;Source0
-            Type: BaseDataVariableType
-            DataType: BaseDataType
+            DataType: Boolean
             ReferenceType: HasSource
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
               Value: "../../../../../License_Valid"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: true
   - Name: Make_Label
     Type: Label
     Children:
@@ -3768,7 +3773,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"License Not Valid!\nRenew License to\nEnable Feature"}
+      Value: {"LocaleId":"en-US","Text":"License Expired!\nContact Ixom to\nRenew License"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -3836,24 +3841,29 @@ Children:
       DataType: Boolean
       Value: true
       Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
         Children:
-        - Name: Expression
+        - Name: Condition
           Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "if({0},False,True)"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
+          DataType: Boolean
           ReferenceType: HasSource
           Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../License_Valid"
+            Value: "../../../../License_Valid"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: true
   - Name: Alias_PartInfo
     Type: Alias
     DataType: NodeId

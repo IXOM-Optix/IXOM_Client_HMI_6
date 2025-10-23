@@ -10,12 +10,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 175.0
+    Value: 200.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 35.0
+    Value: 48.0
   - Name: Export
     Type: Button
     Children:
@@ -273,7 +273,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 25.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -301,6 +301,16 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Roles/Valid_License"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
   - Name: GenericTableExporter
     Type: NetLogic
     WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -443,6 +453,15 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Email/Email_Type"
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
 - Name: Table_Controls
   Id: g=c8965aaca7c3adbac954209b688adb71
   Supertype: Panel
@@ -1980,6 +1999,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 16.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_Client_HMI_6/Security/LicenseKey/License_Key/Valid"
   - Name: Datagrid1
     Type: Alias
     DataType: NodeId

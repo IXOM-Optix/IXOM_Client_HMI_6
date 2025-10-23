@@ -2817,73 +2817,23 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../RegenData"
-  - Name: SpinBox1
+  - Name: SpinBox
     Type: SpinBox
     Children:
     - Name: Value
       Type: BaseDataVariableType
       DataType: Double
       Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Regen_History_Alias}/Index"
         Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "if({0},{1},{2})"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../License_Valid"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
         - Name: Mode
-          Type: PropertyType
+          Type: BaseVariableType
           DataType: DynamicLinkMode
-          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
-        - Name: ns=7;Source1
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "{Regen_History_Alias}/Index"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: ns=7;Source2
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../MinValue"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -2911,7 +2861,6 @@ Children:
     - Name: MaxValue
       Type: BaseDataVariableType
       DataType: Double
-      ModellingRule: Optional
       Value: 100.0
     - Name: LeftMargin
       Type: BaseVariableType
@@ -2936,6 +2885,8 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../License_Valid"
+    - Name: SpinBox_Reset_Upon_License_Invalid
+      Type: NetLogic
   - Name: Label3
     Type: Label
     Children:
@@ -6640,73 +6591,23 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
-  - Name: SpinBox1
+  - Name: SpinBox
     Type: SpinBox
     Children:
     - Name: Value
       Type: BaseDataVariableType
       DataType: Double
       Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Alias_RegenData}/Index"
         Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "if({0},{1},{2})"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../License_Valid"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
         - Name: Mode
-          Type: PropertyType
+          Type: BaseVariableType
           DataType: DynamicLinkMode
-          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
-        - Name: ns=7;Source1
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "{Alias_RegenData}/Index"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: ns=7;Source2
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../MinValue"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -6734,7 +6635,6 @@ Children:
     - Name: MaxValue
       Type: BaseDataVariableType
       DataType: Double
-      ModellingRule: Optional
       Value: 100.0
     - Name: LeftMargin
       Type: BaseVariableType
@@ -6759,6 +6659,8 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../License_Valid"
+    - Name: SpinBox_Reset_Upon_License_Invalid
+      Type: NetLogic
   - Name: Label4
     Type: Label
     Children:
@@ -7112,25 +7014,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "{0}=0"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Tab_Index"
     - Name: Range_Display1
       Type: Range_Display
       Children:
@@ -19493,25 +19376,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "{0}=1"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Tab_Index"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -21010,73 +20874,23 @@ Children:
     DataType: Boolean
     ModellingRule: Optional
     Value: true
-  - Name: SpinBox1
+  - Name: SpinBox
     Type: SpinBox
     Children:
     - Name: Value
       Type: BaseDataVariableType
       DataType: Double
       Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Monthly_Report_Alias}/Index"
         Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "if({0},{1},{2})"
-        - Name: ns=7;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../License_Valid"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
         - Name: Mode
-          Type: PropertyType
+          Type: BaseVariableType
           DataType: DynamicLinkMode
-          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
-        - Name: ns=7;Source1
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "{Monthly_Report_Alias}/Index"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: ns=7;Source2
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../MinValue"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -21103,7 +20917,6 @@ Children:
     - Name: MaxValue
       Type: BaseDataVariableType
       DataType: Double
-      ModellingRule: Optional
       Value: 100.0
     - Name: LeftMargin
       Type: BaseVariableType
@@ -21128,6 +20941,8 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../License_Valid"
+    - Name: SpinBox_Reset_Upon_License_Invalid
+      Type: NetLogic
   - Name: Month
     Type: Label
     Children:

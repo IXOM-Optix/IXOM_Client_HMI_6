@@ -89809,43 +89809,17 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../RegenData"
-      - Name: SpinBox1
+      - Name: SpinBox
         Type: SpinBox
         Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: Double
           Children:
-          - Name: ExpressionEvaluator1
-            Type: ExpressionEvaluator
-            Children:
-            - Name: Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../License_Valid"
-            - Name: Source1
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Regen_History_Alias}/Index"
-            - Name: Source2
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../MinValue"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Regen_History_Alias}/Index"
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
@@ -89855,6 +89829,12 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../License_Valid"
+        - Name: MaxValue
+          Type: BaseDataVariableType
+          DataType: Double
+          Value: 100.0
+        - Name: SpinBox_Reset_Upon_License_Invalid
+          Type: NetLogic
       - Name: Label3
         Type: Label
       - Name: Label16
@@ -93059,43 +93039,17 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 670.0
-      - Name: SpinBox1
+      - Name: SpinBox
         Type: SpinBox
         Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: Double
           Children:
-          - Name: ExpressionEvaluator1
-            Type: ExpressionEvaluator
-            Children:
-            - Name: Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../License_Valid"
-            - Name: Source1
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Monthly_Report_Alias}/Index"
-            - Name: Source2
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../MinValue"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Monthly_Report_Alias}/Index"
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
@@ -93108,6 +93062,12 @@ Children:
         - Name: MinValue
           Type: BaseDataVariableType
           DataType: Double
+        - Name: MaxValue
+          Type: BaseDataVariableType
+          DataType: Double
+          Value: 100.0
+        - Name: SpinBox_Reset_Upon_License_Invalid
+          Type: NetLogic
       - Name: Month
         Type: Label
         Children:
