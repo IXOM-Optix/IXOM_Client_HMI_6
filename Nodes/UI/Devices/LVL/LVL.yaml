@@ -149,6 +149,105 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+  - Name: Rewind
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: Date_Time
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/UTC_DateTime"
+        Children:
+        - Name: ns=7;Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: STS
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: Percent
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Volume
+      Type: BaseDataVariableType
+      DataType: Float
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: ns=7;Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}/100*{1}"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Percent"
+        - Name: ns=7;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Volume_at_100"
+    - Name: Distance
+      Type: BaseDataVariableType
+      DataType: Float
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: ns=7;Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}/100*{1}"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Percent"
+        - Name: ns=7;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Distance_at_100"
+    - Name: Rate_of_Change
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/Enable"
+      Children:
+      - Name: ns=7;Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: LVL_object
   Id: g=6dbbf283edcc6c3dc0356fc0a2912bb7
   Supertype: BaseObjectType

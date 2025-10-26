@@ -2800,7 +2800,7 @@ Children:
       "Value": 0,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 0 - Devices in Auto"
+       "Text": "Step 0 - Check Devices in Auto"
       },
       "Description": {
        "LocaleId": "en-US",
@@ -2811,35 +2811,35 @@ Children:
       "Value": 1,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 1 - Start Return Pump"
+       "Text": "Step 1 - Check Storage Tank Level"
       }
      },{
       "Name": "Value2",
       "Value": 2,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 2 - Start Sample Pump"
+       "Text": "Step 2 - Start Return Pump"
       }
      },{
       "Name": "Value3",
       "Value": 3,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 3 - Read Instrument"
+       "Text": "Step 3 - Start Sample Pump"
       }
      },{
       "Name": "Value4",
       "Value": 4,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 4 - Decide Dose"
+       "Text": "Step 4 -Wait to Sample"
       }
      },{
       "Name": "Value5",
       "Value": 5,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 5 - Calculate Dose"
+       "Text": "Step 5 -Read Instruments"
       },
       "Description": {
        "LocaleId": "en-US",
@@ -2850,7 +2850,7 @@ Children:
       "Value": 6,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 6 - Pre Rinse"
+       "Text": "Step 6 - Decision"
       },
       "Description": {
        "LocaleId": "en-US",
@@ -2861,168 +2861,172 @@ Children:
       "Value": 7,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 7 - Acquire Chlorine"
+       "Text": "Step 7 - Calculate Dose"
       }
      },{
       "Name": "Value8",
       "Value": 8,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 8 - Dose Chlorine"
+       "Text": "Step 8 - Pre-Rinse"
       }
      },{
       "Name": "Value9",
       "Value": 9,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 9 - Wait Chlorine"
+       "Text": "Step 9 - Dose Ammonia"
       }
      },{
       "Name": "Value10",
       "Value": 10,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 10 - Read Chlorine"
+       "Text": "Step 10 - Dose Chlorine"
       }
      },{
       "Name": "Value11",
       "Value": 11,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 11 - Detect Crossover"
+       "Text": "Step 11 - Dosing Decision"
       }
      },{
       "Name": "Value12",
       "Value": 12,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 12 - Acquire NHCL2"
+       "Text": "Step 12 - Post Rinse"
       }
      },{
       "Name": "Value13",
       "Value": 13,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 13 - Add Ammonia"
+       "Text": "Step 13 - Wait Determination"
       }
      },{
       "Name": "Value14",
       "Value": 14,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 14 - Wait Ammonia"
+       "Text": ""
       }
      },{
       "Name": "Value15",
       "Value": 15,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 15 - Add Chlorine"
+       "Text": ""
       }
      },{
       "Name": "Value16",
       "Value": 16,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 16 - Wait Chlorine 2"
+       "Text": ""
       }
      },{
       "Name": "Value17",
       "Value": 17,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 17 - Measure NHCL2"
+       "Text": ""
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
       }
      },{
       "Name": "Value18",
       "Value": 18,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 18 - Detect Residual"
+       "Text": ""
       }
      },{
       "Name": "Value19",
       "Value": 19,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 19 - Post Rinse"
+       "Text": ""
       }
      },{
       "Name": "Value20",
       "Value": 20,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 20 - Cycle Complete"
+       "Text": ""
       }
      },{
       "Name": "Value21",
       "Value": 21,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 21 - Fill Column (Cl)"
+       "Text": ""
       }
      },{
       "Name": "Value22",
       "Value": 22,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 22 - Pre Rinse (Cl)"
+       "Text": ""
       }
      },{
       "Name": "Value23",
       "Value": 23,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 23 - Calibration Dose (Cl)"
+       "Text": ""
       }
      },{
       "Name": "Value24",
       "Value": 24,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 24 - Calibration Wait (Cl)"
+       "Text": ""
       }
      },{
       "Name": "Value25",
       "Value": 25,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 25 - Post Rinse (CL)"
+       "Text": ""
       }
      },{
       "Name": "Value26",
       "Value": 31,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 31 - Fill Column (NH3)"
+       "Text": ""
       }
      },{
       "Name": "Value27",
       "Value": 32,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 32 - Pre Rinse (NH3)"
+       "Text": ""
       }
      },{
       "Name": "Value28",
       "Value": 33,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 33 - Calibration Dose (NH3)"
+       "Text": ""
       }
      },{
       "Name": "Value29",
       "Value": 34,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 34 - Calibration Wait (NH3)"
+       "Text": ""
       }
      },{
       "Name": "Value30",
       "Value": 35,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Step 35 - Post Rinse (NH3)"
+       "Text": ""
       }
      },{
       "Name": "Value31",
@@ -3040,14 +3044,14 @@ Children:
     ModellingRule: None
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step 0 - Devices in Auto"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Start Return Pump"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - Start Sample Pump"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Read Instrument"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 - Decide Dose"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 - Calculate Dose"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Step 6 - Pre Rinse"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"Step 7 - Acquire Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"Step 8 - Dose Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"Step 9 - Wait Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"Step 10 - Read Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"Step 11 - Detect Crossover"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"Step 12 - Acquire NHCL2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"Step 13 - Add Ammonia"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"Step 14 - Wait Ammonia"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"Step 15 - Add Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"Step 16 - Wait Chlorine 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"Step 17 - Measure NHCL2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"Step 18 - Detect Residual"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"Step 19 - Post Rinse"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"Step 20 - Cycle Complete"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"Step 21 - Fill Column (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"Step 22 - Pre Rinse (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"Step 23 - Calibration Dose (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"Step 24 - Calibration Wait (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"Step 25 - Post Rinse (CL)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":"Step 31 - Fill Column (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"Step 32 - Pre Rinse (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":"Step 33 - Calibration Dose (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"Step 34 - Calibration Wait (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"Step 35 - Post Rinse (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"Step 99 - Paused"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step 0 - Check Devices in Auto"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Check Storage Tank Level"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - Start Return Pump"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Start Sample Pump"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 -Wait to Sample"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 -Read Instruments"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Step 6 - Decision"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"Step 7 - Calculate Dose"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"Step 8 - Pre-Rinse"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"Step 9 - Dose Ammonia"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"Step 10 - Dose Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"Step 11 - Dosing Decision"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"Step 12 - Post Rinse"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"Step 13 - Wait Determination"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"Step 99 - Paused"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - Class: DataType
   Name: Enum_RHQ_Pause_Reasons
   Id: g=4ca70717ba7895cb3d41e9bb83fefce0
   Supertype: Enumeration
   EnumDefinition: 
    {
-    "Name": "Enum_MM_Pause_Reasons1",
+    "Name": "Enum_RHQ_Pause_Reasons",
     "DataType": {
      "IdType": 2,
      "Id": "4ca70717ba7895cb3d41e9bb83fefce0",
@@ -3079,7 +3083,7 @@ Children:
       "Value": 3,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#3 Paused - Valve Failure"
+       "Text": "#3 Paused - IO Failure (Auto Resume)"
       }
      },{
       "Name": "Value4",
@@ -3093,104 +3097,120 @@ Children:
       "Value": 5,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#5 Paused - IO Failure (Auto Resume)"
+       "Text": "#5 Paused - Power Quality"
       }
      },{
       "Name": "Value6",
       "Value": 6,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#6 Paused - Raw Water Flow Transmitter"
+       "Text": "#6 Paused - Valve Failure"
       }
      },{
       "Name": "Value7",
       "Value": 7,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#7 Paused - Waste Flow Transmitter"
+       "Text": "#7 Paused - Mixer Fault"
       }
      },{
       "Name": "Value8",
       "Value": 8,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#8 Paused - Waste Flow Conductivity"
+       "Text": "#8 Paused - Sample Pump Fault"
       }
      },{
       "Name": "Value9",
       "Value": 9,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#9 Paused - Brine System Failure"
+       "Text": "#9 Paused - Return Pump Fault"
       }
      },{
       "Name": "Value10",
       "Value": 10,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#10 Paused - Service Water System Failure"
+       "Text": "#10 Paused - Supply Pressure"
       }
      },{
       "Name": "Value11",
       "Value": 11,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#11 Paused - Regen Permissive (Auto Resume)"
+       "Text": "#11 Paused - Ammonia Pressure"
       }
      },{
       "Name": "Value12",
       "Value": 12,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#12 Paused - Max Regen Time Exceeded"
+       "Text": "#12 Paused - Chlorine Pressure"
       }
      },{
       "Name": "Value13",
       "Value": 13,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#13 Paused - Feed System Low Level NA"
+       "Text": "#13 Paused - Return Pressure"
       }
      },{
       "Name": "Value14",
       "Value": 14,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#14 Paused - Low Brine Tank Level (Auto Resume)"
+       "Text": "#14 Paused - Ammonia Flow"
       }
      },{
       "Name": "Value15",
       "Value": 15,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#15 Paused - Comm Failure (Auto Resume)"
+       "Text": "#15 Paused - Chlorine Flow"
       }
      },{
       "Name": "Value16",
       "Value": 16,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#16 Paused - Low Battery (Auto Resume)"
+       "Text": "#16 Paused  - Storage Tank Level"
       }
      },{
       "Name": "Value17",
       "Value": 17,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "#17 Paused - Low Brine Drain Rate (Auto Resume)"
+       "Text": "#17 Paused  - Ammonia Tank Level"
       }
      },{
       "Name": "Value18",
-      "Value": 18
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#18 Paused  - Chlorine Tank Level"
+      }
      },{
       "Name": "Value19",
-      "Value": 19
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#19 Paused  - Batch Tank Level"
+      }
      },{
       "Name": "Value20",
-      "Value": 20
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#20 Paused  - Batch Tank Overflow"
+      }
      },{
       "Name": "Value21",
-      "Value": 21
+      "Value": 21,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#21 Paused  - Containment Flood"
+      }
      },{
       "Name": "Value22",
       "Value": 22
@@ -3438,7 +3458,7 @@ Children:
     ModellingRule: None
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Paused - Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 Paused - Emergency Stop Button Depressed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"#3 Paused - Valve Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"#4 Paused - Power Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"#5 Paused - IO Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"#6 Paused - Raw Water Flow Transmitter"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"#7 Paused - Waste Flow Transmitter"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"#8 Paused - Waste Flow Conductivity"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"#9 Paused - Brine System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"#10 Paused - Service Water System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"#11 Paused - Regen Permissive (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"#12 Paused - Max Regen Time Exceeded"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"#13 Paused - Feed System Low Level NA"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"#14 Paused - Low Brine Tank Level (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"#15 Paused - Comm Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"#16 Paused - Low Battery (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"#17 Paused - Low Brine Drain Rate (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":62,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":66,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":69,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":70,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":76,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":77,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":78,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":79,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":80,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":81,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":82,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":83,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":84,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":85,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":86,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":87,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":88,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":89,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":90,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":91,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":92,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":93,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":94,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":95,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":96,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":97,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":98,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"#99 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Paused - Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 Paused - Emergency Stop Button Depressed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"#3 Paused - IO Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"#4 Paused - Power Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"#5 Paused - Power Quality"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"#6 Paused - Valve Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"#7 Paused - Mixer Fault"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"#8 Paused - Sample Pump Fault"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"#9 Paused - Return Pump Fault"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"#10 Paused - Supply Pressure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"#11 Paused - Ammonia Pressure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"#12 Paused - Chlorine Pressure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"#13 Paused - Return Pressure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"#14 Paused - Ammonia Flow"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"#15 Paused - Chlorine Flow"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"#16 Paused  - Storage Tank Level"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"#17 Paused  - Ammonia Tank Level"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"#18 Paused  - Chlorine Tank Level"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"#19 Paused  - Batch Tank Level"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"#20 Paused  - Batch Tank Overflow"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"#21 Paused  - Containment Flood"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":62,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":66,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":69,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":70,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":76,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":77,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":78,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":79,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":80,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":81,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":82,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":83,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":84,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":85,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":86,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":87,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":88,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":89,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":90,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":91,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":92,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":93,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":94,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":95,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":96,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":97,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":98,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"#99 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - Class: DataType
   Name: Week_Days
   Id: g=bbe49eacd92f96b96f37593067e1d466

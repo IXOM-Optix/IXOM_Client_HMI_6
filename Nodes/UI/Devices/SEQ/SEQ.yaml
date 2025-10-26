@@ -141,6 +141,111 @@ Children:
   - Name: Alarm_Word
     Type: BaseDataVariableType
     DataType: Int16
+  - Name: Rewind
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: Date_Time
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/UTC_DateTime"
+        Children:
+        - Name: ns=7;Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: STS
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: Step_Number
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: Step_Time_Elapsed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Step_Time_Elapsed_Units
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: Step_Time_Remaining
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Step_Time_Remaining_Units
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: Test_1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Compare
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Setpoint
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+    - Name: Test_2
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Compare
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Setpoint
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+    - Name: Test_3
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Compare
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Setpoint
+        Type: BaseDataVariableType
+        DataType: Float
+      - Name: Units
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+    - Name: Last_Pause_Reason
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/Enable"
+      Children:
+      - Name: ns=7;Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: SEQ_object
   Id: g=82c29219b0f7d9eb8c79455e198a1a38
   Supertype: BaseObjectType

@@ -35,20 +35,25 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  10:
+   Uri: 'urn:FTOptix:Core:Net'
+   Module: FTOptix.Core.Net
+   Version: 2.2
  Statistics:
-  TotalNodeCount: 24
-  Objects: 6
+  TotalNodeCount: 29
+  Objects: 7
   ObjectTypes: 0
-  Variables: 18
+  Variables: 22
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 0
   ReferenceTypes: 0
-  Files: 6
+  Files: 7
  Nodes:
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/AB_MIEX_Mini/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/AB_MagnaPak/TagImporter.yaml
+ - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/AB_RHQ/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/Newport_ME/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/S7TIAPROFINETDriver1/SIE_MIEX_Mini/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/S7TIAPROFINETDriver1/SIE_MagnaPak/TagImporter.yaml

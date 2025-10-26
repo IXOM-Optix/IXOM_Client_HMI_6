@@ -116,6 +116,40 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+  - Name: Rewind
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: Date_Time
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/UTC_DateTime"
+        Children:
+        - Name: ns=7;Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: STS
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/Enable"
+      Children:
+      - Name: ns=7;Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: DIG_object
   Id: g=82af46316a5bc258421d1cd803367783
   Supertype: BaseObjectType
