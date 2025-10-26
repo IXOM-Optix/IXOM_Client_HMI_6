@@ -154,7 +154,7 @@ Children:
         DataType: NodePath
         Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/UTC_DateTime"
         Children:
-        - Name: ns=7;Mode
+        - Name: Mode
           Type: BaseVariableType
           DataType: DynamicLinkMode
           ModellingRule: Optional
@@ -241,7 +241,7 @@ Children:
       DataType: NodePath
       Value: "/Objects/IXOM_RHQ/UI/Devices/Model/Rewind/Enable"
       Children:
-      - Name: ns=7;Mode
+      - Name: Mode
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
