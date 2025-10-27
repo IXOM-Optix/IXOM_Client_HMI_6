@@ -779,7 +779,7 @@ Children:
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
-          Value: 250.0
+          Value: 230.0
         - Name: HeaderAlignment
           Type: BaseDataVariableType
           DataType: TextHorizontalAlignment
@@ -838,7 +838,7 @@ Children:
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
-          Value: 160.0
+          Value: 130.0
         - Name: HeaderAlignment
           Type: BaseDataVariableType
           DataType: TextHorizontalAlignment
@@ -875,7 +875,7 @@ Children:
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
-          Value: 500.0
+          Value: -1.0
         - Name: HeaderAlignment
           Type: BaseDataVariableType
           DataType: TextHorizontalAlignment
@@ -923,7 +923,7 @@ Children:
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "{0}-500"
+          Value: "{0}-450"
         - Name: ns=7;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -1754,6 +1754,96 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
+    - Name: Count
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Days_Remaining"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 14.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextVerticalAlignment
+        Type: BaseVariableType
+        DataType: TextVerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#eb001b"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0}<30"
+          - Name: ns=7;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Days_Remaining"
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
   - Name: License_Valid
     Type: BaseDataVariableType
     DataType: Boolean

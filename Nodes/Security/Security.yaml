@@ -1096,6 +1096,12 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 25.0
+      - Name: FontFamily
+        Id: g=e5bf25950e7efffb23fbc08d16836fd9
+        Type: BaseDataVariableType
+        DataType: Font
+        ModellingRule: Optional
+        Value: "Consolas"
     - Name: Label4
       Id: g=753cd107f136390533f4554e48ca9c66
       Type: Label
@@ -1964,6 +1970,12 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 25.0
+      - Name: FontFamily
+        Id: g=12a8e0e385133f3cc93dd60bc6ab4036
+        Type: BaseDataVariableType
+        DataType: Font
+        ModellingRule: Optional
+        Value: "Consolas"
     - Name: LicenseKey_Verify
       Id: g=d9af41371677c0a83b4ea3d334d28ece
       Type: NetLogic

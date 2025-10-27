@@ -716,6 +716,10 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
   - Name: Upper_Lbl
     Type: Label
     Children:
@@ -830,6 +834,10 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
   - Name: Lower_lbl
     Type: Label
     Children:
@@ -944,6 +952,10 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
   - Name: Bottom_lbl
     Type: Label
     Children:
@@ -1058,6 +1070,10 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
   - Name: Insert
     Type: Button
     Children:

@@ -12589,7 +12589,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 270.0
+        Value: 290.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -12629,7 +12629,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 270.0
+        Value: 290.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -12668,7 +12668,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 270.0
+        Value: 290.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -12798,6 +12798,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
   - Name: FontScaling
     Type: BaseDataVariableType
     DataType: Boolean

@@ -3310,80 +3310,7 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 530.0
-  - Name: TextBox9
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Alias_ALZ_POP}/Input_Filter_Rate"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 70.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 16.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 388.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Roles/Startup_Config"
-  - Name: EU_min2
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"ms"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 92.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 387.0
-  - Name: Setpoint_txt
+  - Name: Setpoint_lbl
     Type: Label
     Children:
     - Name: Text
@@ -3401,7 +3328,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 146.0
-  - Name: Delay_txt
+  - Name: Delay_lbl
     Type: Label
     Children:
     - Name: Text
@@ -3420,11 +3347,11 @@ Children:
       ModellingRule: Optional
       Value: 146.0
   - Name: Value
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -3441,6 +3368,56 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 136.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0} && {1}"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Alias_ALZ_POP}/CMD/Simulate"
+        - Name: ns=7;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Roles/Setpoints"
+    - Name: Increment
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -3450,50 +3427,17 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 58.0
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Alias_ALZ_POP}/CMD/Simulate"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 35.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 25.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
-  - Name: Value_txt
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: Value_lbl
     Type: Label
     Children:
     - Name: Text
@@ -3524,12 +3468,12 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
-  - Name: EU_min
-    Type: TextBox
+  - Name: EU_Min
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -3546,6 +3490,33 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 100.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Startup_Config"
+    - Name: Increment
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -3556,44 +3527,17 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 63.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Roles/Startup_Config"
-  - Name: EU_min_txt
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: EU_Min_lbl
     Type: Label
     Children:
     - Name: Text
@@ -3626,11 +3570,11 @@ Children:
       ModellingRule: Optional
       Value: 18.0
   - Name: EU_Max
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -3647,6 +3591,33 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 100.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Startup_Config"
+    - Name: Increment
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -3657,44 +3628,17 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 63.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Roles/Startup_Config"
-  - Name: EU_max_txt
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: EU_max_lbl
     Type: Label
     Children:
     - Name: Text
@@ -4090,11 +4034,11 @@ Children:
       ModellingRule: Optional
       Value: 18.0
   - Name: SP_HH
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4106,11 +4050,20 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
-    - Name: Width
-      Type: BaseVariableType
+    - Name: FontSize
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 100.0
+      Value: 18.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -4121,48 +4074,30 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 173.0
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Roles/Setpoints"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 25.0
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: FontSize
+    - Name: ShowButtons
       Type: BaseDataVariableType
-      DataType: Size
+      DataType: Boolean
       ModellingRule: Optional
-      Value: 18.0
-    - Name: ValueChangeBehaviour
+    - Name: MinValue
       Type: BaseDataVariableType
-      DataType: ValueChangeBehaviour
+      DataType: Double
       ModellingRule: Optional
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
   - Name: SP_H
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4174,11 +4109,20 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
-    - Name: Width
-      Type: BaseVariableType
+    - Name: FontSize
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 100.0
+      Value: 18.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -4189,44 +4133,30 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 201.0
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Roles/Setpoints"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 25.0
-    - Name: FontSize
+    - Name: ShowButtons
       Type: BaseDataVariableType
-      DataType: Size
+      DataType: Boolean
       ModellingRule: Optional
-      Value: 18.0
-    - Name: ValueChangeBehaviour
+    - Name: MinValue
       Type: BaseDataVariableType
-      DataType: ValueChangeBehaviour
+      DataType: Double
       ModellingRule: Optional
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
   - Name: SP_L
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4238,11 +4168,20 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
-    - Name: Width
-      Type: BaseVariableType
+    - Name: FontSize
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 100.0
+      Value: 18.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -4253,44 +4192,30 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 230.0
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Roles/Setpoints"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 25.0
-    - Name: FontSize
+    - Name: ShowButtons
       Type: BaseDataVariableType
-      DataType: Size
+      DataType: Boolean
       ModellingRule: Optional
-      Value: 18.0
-    - Name: ValueChangeBehaviour
+    - Name: MinValue
       Type: BaseDataVariableType
-      DataType: ValueChangeBehaviour
+      DataType: Double
       ModellingRule: Optional
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
   - Name: SP_LL
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4302,21 +4227,11 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
-    - Name: Width
-      Type: BaseVariableType
+    - Name: FontSize
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 100.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 26.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 259.0
+      Value: 18.0
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
@@ -4326,29 +4241,34 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Roles/Setpoints"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 259.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 25.0
-    - Name: FontSize
+    - Name: ShowButtons
       Type: BaseDataVariableType
-      DataType: Size
+      DataType: Boolean
       ModellingRule: Optional
-      Value: 18.0
-    - Name: ValueChangeBehaviour
+    - Name: MinValue
       Type: BaseDataVariableType
-      DataType: ValueChangeBehaviour
+      DataType: Double
       ModellingRule: Optional
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
   - Name: EU_min_txt1
     Type: Label
     Children:
@@ -4651,11 +4571,11 @@ Children:
         DataType: NodePath
         Value: "{Session}/Roles/Startup_Config"
   - Name: Delay_HH
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4672,6 +4592,33 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 49.0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Setpoints"
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -4682,44 +4629,12 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 173.0
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink1
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "{Session}/Roles/Setpoints"
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 16.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
   - Name: Delay_H
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4736,16 +4651,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 49.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 306.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 201.0
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
@@ -4755,6 +4660,14 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Roles/Setpoints"
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4765,21 +4678,22 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 16.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 306.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 201.0
   - Name: Delay_L
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4796,16 +4710,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 49.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 306.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 230.0
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
@@ -4815,6 +4719,14 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Roles/Setpoints"
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4825,21 +4737,22 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 16.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
-      Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 306.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
   - Name: Delay_LL
-    Type: TextBox
+    Type: SpinBox
     Children:
-    - Name: Text
+    - Name: Value
       Type: BaseDataVariableType
-      DataType: LocalizedText
+      DataType: Double
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -4856,16 +4769,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 49.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 306.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 259.0
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
@@ -4875,6 +4778,14 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Session}/Roles/Setpoints"
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4885,16 +4796,76 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 16.0
-    - Name: ns=9;VirtualKeyboardAttachedProperties
-      Type: VirtualKeyboardAttachedProperties
-      DisplayName: {"NamespaceIndex":9,"TextId":"VirtualKeyboardAttachedPropertiesDisplayName"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 306.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 259.0
+  - Name: Sample_Rate
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
       Children:
-      - Name: KeyboardType
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Numeric"
-  - Name: Sample_Rate_txt
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Alias_ALZ_POP}/Input_Filter_Rate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink1
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/Roles/Startup_Config"
+    - Name: Increment
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 388.0
+  - Name: Sample_Rate_lbl
     Type: Label
     Children:
     - Name: Text
@@ -4917,6 +4888,24 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
+  - Name: Sample_Rate_Units
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"ms"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 92.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 387.0
   - Name: Caution_HH
     Type: ScaleLayout
     WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
