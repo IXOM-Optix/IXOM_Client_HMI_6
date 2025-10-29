@@ -15,7 +15,7 @@ Children:
 - Name: FilePath
   Type: BaseDataVariableType
   DataType: AbsoluteResourceUri
-  Value: "file:///C:/Users/clint/Desktop/RHQ.ACD"
+  Value: "file:///C:/Users/clint/Desktop/RHQ/RHQ.ACD"
 - Name: Mode
   Type: BaseDataVariableType
   DataType: FetchModes
