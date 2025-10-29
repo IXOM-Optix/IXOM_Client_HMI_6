@@ -1854,8 +1854,8 @@ Children:
       DataType: String
       Value: "LSH_211.Input_Hold_Delay"
 - Name: FT_503
-  Type: ALZ3
-  DataType: ALZ3
+  Type: FLOW
+  DataType: FLOW
   Children:
   - Name: ALM
     Type: RAEtherNetIPTag
@@ -1969,25 +1969,147 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "FT_503.STS"
-  - Name: Value
+  - Name: Flow_Rate
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "FT_503.Value"
-  - Name: Units
+      Value: "FT_503.Flow_Rate"
+  - Name: Flow_Units
     Type: RAEtherNetIPTag
     DataType: String
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "FT_503.Units"
+      Value: "FT_503.Flow_Units"
+  - Name: Volume
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "FT_503.Volume"
+  - Name: Batch_Volume
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "FT_503.Batch_Volume"
+- Name: PLC
+  Type: PLC_Data_Type3
+  DataType: PLC_Data_Type3
+  Children:
+  - Name: Name
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.Name"
+  - Name: ProductRev
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.ProductRev"
+  - Name: ProductCode
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.ProductCode"
+  - Name: SerialNumber
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.SerialNumber"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.Status"
+  - Name: DateTime
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [8]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.DateTime"
+  - Name: DateTime_Set
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [8]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.DateTime_Set"
+  - Name: DateTime_Sync
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.DateTime_Sync"
+  - Name: Status_RUN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.Status_RUN"
+  - Name: Status_REM
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.Status_REM"
+  - Name: Status_PROG
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PLC.Status_PROG"
+- Name: BOOLS
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [128]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "BOOLS"
 - Name: FT_505
-  Type: ALZ3
-  DataType: ALZ3
+  Type: FLOW
+  DataType: FLOW
   Children:
   - Name: ALM
     Type: RAEtherNetIPTag
@@ -2101,128 +2223,38 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "FT_505.STS"
-  - Name: Value
+  - Name: Flow_Rate
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "FT_505.Value"
-  - Name: Units
+      Value: "FT_505.Flow_Rate"
+  - Name: Flow_Units
     Type: RAEtherNetIPTag
     DataType: String
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "FT_505.Units"
-- Name: PLC
-  Type: PLC_Data_Type3
-  DataType: PLC_Data_Type3
-  Children:
-  - Name: Name
+      Value: "FT_505.Flow_Units"
+  - Name: Volume
     Type: RAEtherNetIPTag
-    DataType: String
+    DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "PLC.Name"
-  - Name: ProductRev
+      Value: "FT_505.Volume"
+  - Name: Batch_Volume
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "PLC.ProductRev"
-  - Name: ProductCode
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.ProductCode"
-  - Name: SerialNumber
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.SerialNumber"
-  - Name: Status
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.Status"
-  - Name: DateTime
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    ValueRank: OneDimension
-    ArrayDimensions: [8]
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.DateTime"
-  - Name: DateTime_Set
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    ValueRank: OneDimension
-    ArrayDimensions: [8]
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.DateTime_Set"
-  - Name: DateTime_Sync
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.DateTime_Sync"
-  - Name: Status_RUN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.Status_RUN"
-  - Name: Status_REM
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.Status_REM"
-  - Name: Status_PROG
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.Status_PROG"
-- Name: BOOLS
-  Type: RAEtherNetIPTag
-  DataType: Boolean
-  ValueRank: OneDimension
-  ArrayDimensions: [128]
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "BOOLS"
+      Value: "FT_505.Batch_Volume"
 - Name: V103
   Type: VLV3
   DataType: VLV3
@@ -8705,6 +8737,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "S.of"
+  - Name: mL
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "S.mL"
+  - Name: ppm
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "S.ppm"
 - Name: 'Local:1:C'
   Type: 'AB:5000_AI4CJ:C:02'
   DataType: 'AB:5000_AI4CJ:C:02'

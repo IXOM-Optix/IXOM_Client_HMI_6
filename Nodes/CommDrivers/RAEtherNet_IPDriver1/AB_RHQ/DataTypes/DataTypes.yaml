@@ -2,6 +2,303 @@ Name: DataTypes
 Type: FolderType
 Children:
 - Class: DataType
+  Name: PLC_Data_Type3
+  Id: g=bbee0fdf48439a58dab82cbfb2012365
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "PLC_Data_Type",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bbee0fdf48439a58dab82cbfb2012365",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "ProductRev",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ProductCode",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "SerialNumber",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DateTime",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [8]
+     },{
+      "Name": "DateTime_Set",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [8]
+     },{
+      "Name": "DateTime_Sync",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Status_RUN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Status_REM",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Status_PROG",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"PLC_Data_Type"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_AI:O:03'
+  Id: g=ff7eb7b6a8e0d63895cab14aea45f29c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_AI:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ff7eb7b6a8e0d63895cab14aea45f29c",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "LLAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RateAlarmEn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RateAlarmUnlatch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SensorOffset",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_AI:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Sequencer_Pause_Reason3
+  Id: g=418a979138cda9472f59114cd0738233
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Sequencer_Pause_Reason",
+    "DataType": {
+     "IdType": 2,
+     "Id": "418a979138cda9472f59114cd0738233",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Pause_Reason",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Pause_Duration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Pause_Time",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Step_Before_Pause",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Sequencer_Pause_Reason"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_DO:O:03'
+  Id: g=eb1e396ac166fe2e4d95e9aabcbd01c7
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_DO:O:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "eb1e396ac166fe2e4d95e9aabcbd01c7",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Data",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_DO:O:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: 'CHANNEL_DI:I:03'
+  Id: g=e6d81f7721b155e6e1b2554b693b4d65
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "CHANNEL_DI:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e6d81f7721b155e6e1b2554b693b4d65",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "Data",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Fault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Uncertain",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"CHANNEL_DI:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: LVL_AOI3
+  Id: g=0fb346bdeab0e69057c473a559fe8b81
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "LVL_AOI",
+    "DataType": {
+     "IdType": 2,
+     "Id": "0fb346bdeab0e69057c473a559fe8b81",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RAW_INPUT",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"LVL_AOI"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
   Name: 'CHANNEL_AI_DIAG:I:03'
   Id: g=5fc8b88f239eed01230453c44af11ec1
   Supertype: Structure
@@ -101,241 +398,6 @@ Children:
      }]
    }
   DisplayName: {"LocaleId":"","Text":"CHANNEL_AI_DIAG:I:0"}
-  Children:
-  - Name: ns=0;Default Binary
-    Type: DataTypeEncodingType
-    ModellingRule: None
-    DisplayName: {"LocaleId":"","Text":"Default Binary"}
-    ReferenceType: HasEncoding
-- Class: DataType
-  Name: 'CHANNEL_AI:O:03'
-  Id: g=ff7eb7b6a8e0d63895cab14aea45f29c
-  Supertype: Structure
-  StructDefinition: 
-   {
-    "Name": "CHANNEL_AI:O:0",
-    "DataType": {
-     "IdType": 2,
-     "Id": "ff7eb7b6a8e0d63895cab14aea45f29c",
-     "Namespace": 40
-    },
-    "Fields": [{
-      "Name": "LLAlarmEn",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "LAlarmEn",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "HAlarmEn",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "HHAlarmEn",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "RateAlarmEn",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "LLAlarmUnlatch",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "LAlarmUnlatch",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "HAlarmUnlatch",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "HHAlarmUnlatch",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "RateAlarmUnlatch",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "SensorOffset",
-      "DataType": {
-       "Id": 10
-      }
-     }]
-   }
-  DisplayName: {"LocaleId":"","Text":"CHANNEL_AI:O:0"}
-  Children:
-  - Name: ns=0;Default Binary
-    Type: DataTypeEncodingType
-    ModellingRule: None
-    DisplayName: {"LocaleId":"","Text":"Default Binary"}
-    ReferenceType: HasEncoding
-- Class: DataType
-  Name: PLC_Data_Type3
-  Id: g=bbee0fdf48439a58dab82cbfb2012365
-  Supertype: Structure
-  StructDefinition: 
-   {
-    "Name": "PLC_Data_Type",
-    "DataType": {
-     "IdType": 2,
-     "Id": "bbee0fdf48439a58dab82cbfb2012365",
-     "Namespace": 40
-    },
-    "Fields": [{
-      "Name": "Name",
-      "DataType": {
-       "Id": 12
-      }
-     },{
-      "Name": "ProductRev",
-      "DataType": {
-       "Id": 4
-      }
-     },{
-      "Name": "ProductCode",
-      "DataType": {
-       "Id": 4
-      }
-     },{
-      "Name": "SerialNumber",
-      "DataType": {
-       "Id": 6
-      }
-     },{
-      "Name": "Status",
-      "DataType": {
-       "Id": 4
-      }
-     },{
-      "Name": "DateTime",
-      "DataType": {
-       "Id": 6
-      },
-      "ValueRank": "OneDimension",
-      "ArrayDimensions": [8]
-     },{
-      "Name": "DateTime_Set",
-      "DataType": {
-       "Id": 6
-      },
-      "ValueRank": "OneDimension",
-      "ArrayDimensions": [8]
-     },{
-      "Name": "DateTime_Sync",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "Status_RUN",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "Status_REM",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "Status_PROG",
-      "DataType": {
-       "Id": 1
-      }
-     }]
-   }
-  DisplayName: {"LocaleId":"","Text":"PLC_Data_Type"}
-  Children:
-  - Name: ns=0;Default Binary
-    Type: DataTypeEncodingType
-    ModellingRule: None
-    DisplayName: {"LocaleId":"","Text":"Default Binary"}
-    ReferenceType: HasEncoding
-- Class: DataType
-  Name: Sequencer_Pause_Reason3
-  Id: g=418a979138cda9472f59114cd0738233
-  Supertype: Structure
-  StructDefinition: 
-   {
-    "Name": "Sequencer_Pause_Reason",
-    "DataType": {
-     "IdType": 2,
-     "Id": "418a979138cda9472f59114cd0738233",
-     "Namespace": 40
-    },
-    "Fields": [{
-      "Name": "Pause_Reason",
-      "DataType": {
-       "Id": 4
-      }
-     },{
-      "Name": "Pause_Duration",
-      "DataType": {
-       "Id": 6
-      }
-     },{
-      "Name": "Pause_Time",
-      "DataType": {
-       "Id": 6
-      },
-      "ValueRank": "OneDimension",
-      "ArrayDimensions": [7]
-     },{
-      "Name": "Step_Before_Pause",
-      "DataType": {
-       "Id": 4
-      }
-     }]
-   }
-  DisplayName: {"LocaleId":"","Text":"Sequencer_Pause_Reason"}
-  Children:
-  - Name: ns=0;Default Binary
-    Type: DataTypeEncodingType
-    ModellingRule: None
-    DisplayName: {"LocaleId":"","Text":"Default Binary"}
-    ReferenceType: HasEncoding
-- Class: DataType
-  Name: LVL_AOI3
-  Id: g=0fb346bdeab0e69057c473a559fe8b81
-  Supertype: Structure
-  StructDefinition: 
-   {
-    "Name": "LVL_AOI",
-    "DataType": {
-     "IdType": 2,
-     "Id": "0fb346bdeab0e69057c473a559fe8b81",
-     "Namespace": 40
-    },
-    "Fields": [{
-      "Name": "EnableIn",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "EnableOut",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "RAW_INPUT",
-      "DataType": {
-       "Id": 10
-      }
-     }]
-   }
-  DisplayName: {"LocaleId":"","Text":"LVL_AOI"}
   Children:
   - Name: ns=0;Default Binary
     Type: DataTypeEncodingType
@@ -931,68 +993,6 @@ Children:
      }]
    }
   DisplayName: {"LocaleId":"","Text":"System"}
-  Children:
-  - Name: ns=0;Default Binary
-    Type: DataTypeEncodingType
-    ModellingRule: None
-    DisplayName: {"LocaleId":"","Text":"Default Binary"}
-    ReferenceType: HasEncoding
-- Class: DataType
-  Name: 'CHANNEL_DO:O:03'
-  Id: g=eb1e396ac166fe2e4d95e9aabcbd01c7
-  Supertype: Structure
-  StructDefinition: 
-   {
-    "Name": "CHANNEL_DO:O:0",
-    "DataType": {
-     "IdType": 2,
-     "Id": "eb1e396ac166fe2e4d95e9aabcbd01c7",
-     "Namespace": 40
-    },
-    "Fields": [{
-      "Name": "Data",
-      "DataType": {
-       "Id": 1
-      }
-     }]
-   }
-  DisplayName: {"LocaleId":"","Text":"CHANNEL_DO:O:0"}
-  Children:
-  - Name: ns=0;Default Binary
-    Type: DataTypeEncodingType
-    ModellingRule: None
-    DisplayName: {"LocaleId":"","Text":"Default Binary"}
-    ReferenceType: HasEncoding
-- Class: DataType
-  Name: 'CHANNEL_DI:I:03'
-  Id: g=e6d81f7721b155e6e1b2554b693b4d65
-  Supertype: Structure
-  StructDefinition: 
-   {
-    "Name": "CHANNEL_DI:I:0",
-    "DataType": {
-     "IdType": 2,
-     "Id": "e6d81f7721b155e6e1b2554b693b4d65",
-     "Namespace": 40
-    },
-    "Fields": [{
-      "Name": "Data",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "Fault",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "Uncertain",
-      "DataType": {
-       "Id": 1
-      }
-     }]
-   }
-  DisplayName: {"LocaleId":"","Text":"CHANNEL_DI:I:0"}
   Children:
   - Name: ns=0;Default Binary
     Type: DataTypeEncodingType
@@ -2729,6 +2729,117 @@ Children:
     DisplayName: {"LocaleId":"","Text":"Default Binary"}
     ReferenceType: HasEncoding
 - Class: DataType
+  Name: FLOW
+  Id: g=07fad4c99dfeb201c9f6a99391057aa0
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "FLOW",
+    "DataType": {
+     "IdType": 2,
+     "Id": "07fad4c99dfeb201c9f6a99391057aa0",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "ALM",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "CMD",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "DELAY_H",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_HH",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_L",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DELAY_LL",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "EU_Min",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "EU_Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Input_Filter_Rate",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "SP_H",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_HH",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_L",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SP_LL",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "STS",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Flow_Rate",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Flow_Units",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Volume",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Batch_Volume",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"FLOW"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
   Name: 'AB:5000_DO16_Diag:C:03'
   Id: g=08e13d3f983838be70756293a8ea729d
   Supertype: Structure
@@ -3467,6 +3578,16 @@ Children:
       }
      },{
       "Name": "of",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "mL",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "ppm",
       "DataType": {
        "Id": 12
       }

@@ -189,7 +189,7 @@ Children:
   Supertype: BaseObjectType
   Children:
   - Name: ALZ
-    Type: ALZ_UDT
+    Type: FLOW_UDT
     Children:
     - Name: PLC
       Type: BaseDataVariableType
@@ -277,10 +277,10 @@ Children:
       - Name: 9
         Type: BaseDataVariableType
         DataType: Boolean
-      - Name: 10
+      - Name: Reset_Volume
         Type: BaseDataVariableType
         DataType: Boolean
-      - Name: 11
+      - Name: Reset_Batch
         Type: BaseDataVariableType
         DataType: Boolean
       - Name: 12
@@ -293,6 +293,12 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
       - Name: Reset_Required
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: 10
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: 11
         Type: BaseDataVariableType
         DataType: Boolean
     - Name: DELAY_LL
@@ -328,13 +334,19 @@ Children:
     - Name: Input_Filter_Rate
       Type: BaseDataVariableType
       DataType: Float
-    - Name: Value
+    - Name: Flow_Rate
       Type: BaseDataVariableType
       DataType: Float
-    - Name: Units
+    - Name: Flow_Units
       Type: BaseDataVariableType
       DataType: String
       Value: "0"
+    - Name: Volume
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Batch_Volume
+      Type: BaseDataVariableType
+      DataType: Float
     - Name: Part_Info
       Type: Alias
       DataType: NodeId
@@ -367,6 +379,13 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: "/Objects/IXOM_Client_HMI_6/UI/Devices/Parts/Part_Info"
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Units
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
   - Name: Comm_Fail
     Type: DigitalAlarm_IXOM
     Children:
