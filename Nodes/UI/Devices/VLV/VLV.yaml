@@ -10786,7 +10786,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 150.0
+      Value: 140.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -13464,6 +13464,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+      Value: -10.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -13604,7 +13605,11 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 25.0
+      Value: 22.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: EU_min_txt4
     Type: Label
     Children:
